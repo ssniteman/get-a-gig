@@ -59,12 +59,41 @@ body {
 }
 
 .col-lg-12 {
+    color: silver;
     padding: 0px;
     margin-bottom: 20px;
     border: 1px solid silver;
     border-radius: 2px;
     background-color: white;
 }
+
+.header-photos {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid silver;
+    box-shadow: 0px 1px 2px silver;
+
+    h4 {
+        color: gray;
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-left: 10px;
+        padding-top: 15px;
+    }
+}
+
+.photo {
+    background-color: white;
+    
+    .img-responsive {
+        padding: 20px;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
 
 .header-form {
     height: 50px;
@@ -80,6 +109,11 @@ body {
         margin-left: 10px;
         padding-top: 15px;
     }
+}
+
+.main-form {
+    padding: 20px;
+    border-bottom: 1px solid silver;
 }
 
 .header-buttons {
