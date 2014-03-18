@@ -278,3 +278,84 @@ body {
 .create-account-title {
     text-align: center;
 }
+
+// Modal Styling Area
+
+.modal-dialog {
+    border-radius: 1px;
+    width: 450px;
+    padding-top: 150px;
+    padding-bottom: 30px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: rgb(51, 51, 51);
+    border-radius: 3px;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: none;
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-footer {
+    border: none;
+}
+
+.input-group {
+    padding: 10px;
+}
+
+.input-group .form-control {
+    color: silver;
+    background: #414141;
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.input-group-addon {
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: silver;
+    text-align: center;
+    background-color: #5F5F5F;
+    border-radius: 4px;
+}
+
+.cancel-button {
+    display: inline-block;
+    width: 121px;
+    height: 38px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: #dd473d;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
+}
+
+.save-button {
+    display: inline-block;
+    width: 121px;
+    height: 38px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: #dd473d;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin: 10px 10px 10px 110px;
+}
