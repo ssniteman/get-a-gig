@@ -116,6 +116,7 @@ body {
     margin-top: 30px;
 }
 
+
 .create-account {
 
     text-align: center;
@@ -129,11 +130,17 @@ body {
 }
 
 .sign-in-drop {
-   width: 195px;
+    display: none;
+
+    &.active {
+    display: block;
+    width: 195px;
     height: 76px;
     border: 2px solid black;
     border-top-width: 0px;
     margin: 0 auto;
+    }
+    
 }
 
 
