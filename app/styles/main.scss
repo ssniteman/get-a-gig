@@ -352,7 +352,22 @@ body {
     margin: 10px 10px 10px 10px;
 }
 
-.save-button {
+.save-button-musician {
+    display: inline-block;
+    width: 121px;
+    height: 38px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: #dd473d;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin: 10px 10px 10px 110px;
+}
+
+.save-button-bar {
     display: inline-block;
     width: 121px;
     height: 38px;
