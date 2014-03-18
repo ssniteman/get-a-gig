@@ -104,32 +104,25 @@ body {
     margin-top: 35px;
 }
 
-.sign-in {
+.sign-in-btn {
 
-    text-align: center;
-    padding-top: 3px;
-    border: 2px solid black;
-    border-radius: 8px;
     width: 200px;
-    height: 30px;
-    margin: 0 auto;
-    margin-top: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(221, 71, 61);
 }
 
 
 /*buttons on sign in click*/
 
 
-.create-account {
+.create-account-btn {
 
-    text-align: center;
-    padding-top: 3px;
-    border: 2px solid black;
-    border-radius: 8px;
     width: 200px;
-    height: 30px;
-    margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(221, 71, 61);
 }
 
 .sign-in-drop {
@@ -168,15 +161,15 @@ body {
     border-radius: 2px;
 }
 
-.btn-primary.btn-lg.band-btn {
-    padding: 12px 31px 12px 33px;
+.band-btn {
+    width: 200px;
     border: none;
     border-radius: 8px;
     background-color: rgb(221, 71, 61);
 }
 
-.btn-primary.btn-lg.bar-btn {
-    padding: 12px 50px 12px 50px;
+.bar-btn {
+    width: 200px;
     margin-top: 20px;
     border: none;
     border-radius: 8px;
