@@ -238,6 +238,14 @@ body {
     outline: none;
 }
 
+.modal-header {
+    border: none;
+}
+
+.modal-footer {
+    border: none;
+}
+
 .input-group {
     padding: 10px;
 }
@@ -261,4 +269,34 @@ body {
     text-align: center;
     background-color: #5F5F5F;
     border-radius: 4px;
+}
+
+.cancel-button {
+    display: inline-block;
+    width: 121px;
+    height: 38px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: #dd473d;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
+}
+
+.save-button {
+    display: inline-block;
+    width: 121px;
+    height: 38px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: #dd473d;
+    line-height: 32px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin: 10px 10px 10px 110px;
 }
