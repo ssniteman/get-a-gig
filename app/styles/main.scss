@@ -123,6 +123,20 @@ body {
         background-color: rgb(168,48,39);
 
     }
+
+    &.active {
+    width: 200px;
+    height: 45px;
+    color: white;
+    border: none;
+    background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+    }
+
 }
 
 
@@ -148,6 +162,10 @@ body {
         background-color: rgb(168,48,39);
 
     }
+
+    &.active {
+        display: none;
+    }
 }
 
 .sign-in-drop {
@@ -155,23 +173,62 @@ body {
 
     &.active {
     display: block;
-    width: 195px;
-    height: 76px;
-    border: 2px solid black;
-    border-top-width: 0px;
+    width: 199px;
+    background-color: #dd473d;
+    height: 93px;
+    border-top: 1.5px solid rgb(168,48,39);
+    border-bottom: 1.5px solid rgb(168,48,39);
     margin: 0 auto;
     }
 }
 
 .username {
-    text-align: center;
-    border: 2px solid black;
+   margin-top: 10px;
+    margin-left: 11px;
     border-radius: 2px;
-    width: 200px;
+    width: 175px;
     height: 30px;
-    margin: 0 auto;
-    margin-top: 30px;
+    text-align: center;
 }
+
+.password {
+   margin-top: 10px;
+    margin-left: 11px;
+    border-radius: 2px;
+    width: 175px;
+    height: 30px;
+    text-align: center;
+}
+
+.enter-btn {
+
+    display: none;
+
+
+    &.active {
+    display: block;
+    width: 199px;
+    height: 45px;
+    color: white;
+    border: none;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #dd473d;
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 0px;
+    }
+
+    &:hover {
+
+        background-color: rgb(168,48,39);
+
+    }
+
+}
+
 
 
 
@@ -196,6 +253,8 @@ body {
         background-color: rgb(168,48,39);
     }
 }
+
+
 
 .bar-btn {
     width: 200px;
