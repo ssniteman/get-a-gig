@@ -48,6 +48,20 @@ Parse.initialize("3iYwTMywkleelnVUpiZdaXPPqVpvDsxw5qsJ1pev", "xLRITPtlktBrAiar3X
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $('.save-button-bar').click(function){
   console.log('bar button firing')
   var bar = new Parse.User();
