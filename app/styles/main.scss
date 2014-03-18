@@ -107,9 +107,22 @@ body {
 .sign-in-btn {
 
     width: 200px;
+    height: 45px;
+    color: white;
     border: none;
     border-radius: 8px;
     background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    &:hover {
+
+        background-color: rgb(168,48,39);
+
+    }
 }
 
 
@@ -119,10 +132,22 @@ body {
 .create-account-btn {
 
     width: 200px;
-    margin-top: 20px;
+    height: 45px;
+    color: white;
     border: none;
     border-radius: 8px;
     background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    &:hover {
+
+        background-color: rgb(168,48,39);
+
+    }
 }
 
 .sign-in-drop {
@@ -152,26 +177,45 @@ body {
 
 /*create account page view*/
 
-.col-lg-12 {
-    text-align: center;
-    color: black;
-    padding: 0px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    border-radius: 2px;
-}
 
 .band-btn {
     width: 200px;
+    height: 45px;
+    color: white;
     border: none;
     border-radius: 8px;
     background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    &:hover {
+
+        background-color: rgb(168,48,39);
+    }
 }
 
 .bar-btn {
     width: 200px;
-    margin-top: 20px;
+    height: 45px;
+    color: white;
     border: none;
     border-radius: 8px;
     background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    &:hover {
+
+        background-color: rgb(168,48,39);
+    }
+}
+
+.create-account-title {
+    text-align: center;
 }
