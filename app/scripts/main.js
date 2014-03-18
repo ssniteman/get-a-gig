@@ -24,21 +24,23 @@ $('.save-button-musician').click(function() {
 
     // capturing values that were inputed by musicians
 
-    var musicianUsername = $('.musician-username').val();
+    var musicianName = $('.musician-name').val();
     var musicianType = $('.solo-or-band').val();
     var musicianLocation = $('.musician-location').val();
     var musicianPhone = $('.musician-phone').val();
     var musicianEmail = $('.musician-email').val();
+    var musicianUsername = $('.musician-username').val();
     var musicianPassword = $('.musician-password').val();
     var musicianVerifyPassword = $('.musician-verify-password').val();
 
     // setting inputs into Parse as objects
 
-    musician.set("musicianUsername", "musician-username");
+    musician.set("musicianName", "musician-name");
     musician.set("musicianType", "solo-or-band");
     musician.set("musicianLocation", "musician-location");
     musician.set("musicianPhone", "musician-phone");
     musician.set("musicianEmail", "musician-email");
+    musician.set("musicianUsername", "musician-username");
     musician.set("musicianPassword", "musician-password");
     musician.set("musicianVerifyPassword", "musician-verify-password");
 
