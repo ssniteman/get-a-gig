@@ -52,6 +52,8 @@ $('.save-button-bar').click(function){
   console.log('bar button firing')
   var bar = new Parse.User();
 
+  // capturing values inputed by bar owners
+
   var barUsername $('.bar-username').val();
   var barLocation $('.bar-location').val();
   var barPhone $('.bar-phone').val();
@@ -59,18 +61,16 @@ $('.save-button-bar').click(function){
   var barPassword $('.bar-password').val();
   var barVerifyPassword $('.bar-verify-password').val();
 
+  // Setting inputs into Parse as objects  
 
-
-
-  bar.set("username", "my name");
-  bar.set("password", "my pass");
-  bar.set("email", "email@example.com");
-  bar.set("email", "email@example.com");
-  bar.set("email", "email@example.com");
-  bar.set("email", "email@example.com");
+  bar.set("barUsername", "bar-username");
+  bar.set("barLocation", "bar-location");
+  bar.set("barPhone", "bar-phone");
+  bar.set("barEmail", "bar-email");
+  bar.set("barPassword", "bar-password");
+  bar.set("barVerifyPassword", "bar-verify-password");
    
-  // other fields can be set just like with Parse.Object
-  bar.set("phone", "415-392-0202");
+
    
   bar.signUp(null, {
     success: function(bar) {
