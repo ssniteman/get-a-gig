@@ -54,19 +54,21 @@ $('.save-button-bar').click(function){
 
   // capturing values inputed by bar owners
 
-  var barUsername $('.bar-username').val();
+  var barName $('.bar-name').val();
   var barLocation $('.bar-location').val();
   var barPhone $('.bar-phone').val();
   var barEmail $('.bar-email').val();
+  var barUserName $('.bar-user-name').val();
   var barPassword $('.bar-password').val();
   var barVerifyPassword $('.bar-verify-password').val();
 
   // Setting inputs into Parse as objects  
 
-  bar.set("barUsername", "bar-username");
+  bar.set("barName", "bar-name");
   bar.set("barLocation", "bar-location");
   bar.set("barPhone", "bar-phone");
   bar.set("barEmail", "bar-email");
+  bar.set("barUsername", "bar-username");
   bar.set("barPassword", "bar-password");
   bar.set("barVerifyPassword", "bar-verify-password");
    
