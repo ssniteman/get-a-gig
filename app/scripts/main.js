@@ -21,6 +21,9 @@ $(function() {
 $('.save-button-musician').click(function() {
     console.log('musician button firing function')
     var musician = new Parse.User();
+
+    // capturing values that were inputed by musicians
+
     var musicianUsername = $('.musician-username').val();
     var musicianType = $('.solo-or-band').val();
     var musicianLocation = $('.musician-location').val();
@@ -29,21 +32,16 @@ $('.save-button-musician').click(function() {
     var musicianPassword = $('.musician-password').val();
     var musicianVerifyPassword = $('.musician-verify-password').val();
 
+    // setting inputs into Parse as objects
 
+    musician.set("musicianUsername", "musician-username");
+    musician.set("musicianType", "solo-or-band");
+    musician.set("musicianLocation", "musician-location");
+    musician.set("musicianPhone", "musician-phone");
+    musician.set("musicianEmail", "musician-email");
+    musician.set("musicianPassword", "musician-password");
+    musician.set("musicianVerifyPassword", "musician-verify-password");
 
-    musician.set("username", "name");
-    musician.set("", "my pass");
-    musician.set("", "my pass");
-    musician.set("", "my pass");
-    musician.set("", "my pass");
-    musician.set("", "my pass");
-    musician.set("", "my pass");
-    musician.set("", "my pass");
-    musician.set("", "my pass");
-    musician.set("email", "email@example.com");
-
-    // other fields can be set just like with Parse.Object
-    musician.set("phone", "415-392-0202");
 
     musician.signUp(null, {
         success: function(musician) {
