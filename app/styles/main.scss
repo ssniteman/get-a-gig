@@ -170,16 +170,16 @@ body {
 
 .sign-in-drop {
     display: none;
-
-    &.active {
-    display: block;
     width: 199px;
     background-color: #dd473d;
-    height: 93px;
+    height: 0px;
     border-top: 1.5px solid rgb(168,48,39);
     border-bottom: 1.5px solid rgb(168,48,39);
     margin: 0 auto;
-    }
+    transition-property: height;
+    transition-duration: 500;
+
+
 }
 
 .username {
@@ -200,7 +200,7 @@ body {
     text-align: center;
 }
 
-.enter-btn {
+.login-btn {
 
     display: none;
 
