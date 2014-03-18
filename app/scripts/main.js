@@ -10,8 +10,52 @@ $('.sign-in-btn').click(function() {
 
 });
 
+// saving musician sign-up to parse
+
+$(function() {
+
+    Parse.initialize("3iYwTMywkleelnVUpiZdaXPPqVpvDsxw5qsJ1pev", "xLRITPtlktBrAiar3Xfk83Rs1isM23IbUHdXbr82");
+
+}),
+
+$('.save-button-musician').click(function() {
+    console.log('musician button firing function')
+    var musician = new Parse.User();
+    var musicianUsername = $('.musician-username').val();
+    var musicianType = $('.solo-or-band').val();
+    var musicianLocation = $('.musician-location').val();
+    var musicianPhone = $('.musician-phone').val();
+    var musicianEmail = $('.musician-email').val();
+    var musicianPassword = $('.musician-password').val();
+    var musicianVerifyPassword = $('.musician-verify-password').val();
+
+
+
+    musician.set("username", "name");
+    musician.set("", "my pass");
+    musician.set("", "my pass");
+    musician.set("", "my pass");
+    musician.set("", "my pass");
+    musician.set("", "my pass");
+    musician.set("", "my pass");
+    musician.set("", "my pass");
+    musician.set("", "my pass");
+    musician.set("email", "email@example.com");
+
+    // other fields can be set just like with Parse.Object
+    musician.set("phone", "415-392-0202");
+
+    musician.signUp(null, {
+        success: function(musician) {
+            // Hooray! Let them use the app now.
+        },
+        error: function(musician, error) {
+            // Show the error message somewhere and let the user try again.
+            alert("Error: " + error.code + " " + error.message);
+        }
+    });
 
 
 
 
-Parse.initialize("3iYwTMywkleelnVUpiZdaXPPqVpvDsxw5qsJ1pev", "xLRITPtlktBrAiar3Xfk83Rs1isM23IbUHdXbr82");
+})
