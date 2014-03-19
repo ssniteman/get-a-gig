@@ -401,15 +401,17 @@ body {
     height: 300px;
     vertical-align: top;
     margin-top: 50px;
+    float: left;
 
 }
 
 .showcase-box {
     background-color: green;
     width: 550px;
-    height: 300px;
+    height: 600px;
     vertical-align: top;
     margin-top: 50px;
+    float: left;
 }
 
 .search-box {
@@ -421,6 +423,16 @@ body {
     float: right;
     margin-top: 50px;
 
+}
+
+.messages-box {
+    display: inline-block;
+    background-color: orange;
+    width: 300px;
+    height: 500px;
+    vertical-align: top;
+    float: right;
+    margin-top: 50px;
 }
 
 
