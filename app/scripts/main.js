@@ -63,9 +63,7 @@ $('.save-button-musician').click(function() {
     });
 
 
-
-
-$('.save-button-bar').click(function){
+$('.save-button-bar').click(function() {
   console.log('bar button firing')
   var bar = new Parse.User();
 
@@ -106,4 +104,4 @@ $('.save-button-bar').click(function){
       alert("Error: " + error.code + " " + error.message);
     }
   });
-}
+});
