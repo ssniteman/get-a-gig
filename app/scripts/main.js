@@ -93,7 +93,13 @@ $('.save-button-bar').click(function){
    
   bar.signUp(null, {
     success: function(bar) {
-      // Hooray! Let them use the app now.
+      $('.bar-name').val('');
+      $('.bar-location').val('');
+      $('.bar-phone').val('');
+      $('.bar-email').val('');
+      $('.bar-user-name').val('');
+      $('.bar-password').val('');
+      $('.bar-verify-password').val('');
     },
     error: function(bar, error) {
       // Show the error message somewhere and let the bar try again.
