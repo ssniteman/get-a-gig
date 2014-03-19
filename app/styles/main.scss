@@ -128,7 +128,7 @@ body {
     width: 200px;
     height: 45px;
     color: white;
-    border: none;
+    border-bottom: 1.5px solid rgb(168,48,39); 
     background-color: rgb(221, 71, 61);
     line-height: 43px;
     text-align: center;
@@ -156,6 +156,9 @@ body {
     padding-top: 3px;
     margin: 0 auto;
     margin-top: 30px;
+    opacity: 1;
+
+    @include transition(opacity 400ms ease);
 
     &:hover {
 
@@ -164,26 +167,25 @@ body {
     }
 
     &.active {
-        display: none;
+        opacity: 0;
     }
 }
 
 .sign-in-drop {
-    display: none;
-    width: 199px;
+    overflow: hidden;
+    width: 200px;
     background-color: #dd473d;
     height: 0px;
-    border-top: 1.5px solid rgb(168,48,39);
-    border-bottom: 1.5px solid rgb(168,48,39);
+  /*  border-top: 1.5px solid rgb(168,48,39);*/
+   /* border-bottom: 1.5px solid rgb(168,48,39);*/
     margin: 0 auto;
-    transition-property: height;
-    transition-duration: 500;
+    @include transition(height 1000ms ease);
 
 
 }
 
 .username {
-   margin-top: 10px;
+   margin-top: 15px;
     margin-left: 11px;
     border-radius: 2px;
     width: 175px;
@@ -201,11 +203,6 @@ body {
 }
 
 .login-btn {
-
-    display: none;
-
-
-    &.active {
     display: block;
     width: 199px;
     height: 45px;
@@ -218,8 +215,9 @@ body {
     text-align: center;
     padding-top: 3px;
     margin: 0 auto;
-    margin-top: 0px;
-    }
+    margin-top: 15px;
+    border-top: 1.5px solid rgb(168,48,39);
+ 
 
     &:hover {
 

@@ -2,12 +2,8 @@
 
 $('.sign-in-btn').click(function() {
     $(this).addClass('active');
-    $('.sign-in-drop').css('display', 'block');
-    $('.sign-in-drop').css('height', '93px');
+    $('.sign-in-drop').css('height', '145px');
     $('.create-account-btn').addClass('active');
-    $('.login-btn').addClass('active');
-
-
 });
 
 // saving musician sign-up to parse
@@ -61,48 +57,48 @@ $('.save-button-musician').click(function() {
             alert("Error: " + error.code + " " + error.message);
         }
     });
-  });
+});
 
 
 $('.save-button-bar').click(function() {
-  console.log('bar button firing')
-  var bar = new Parse.User();
+    console.log('bar button firing')
+    var bar = new Parse.User();
 
-  // capturing values inputed by bar owners
+    // capturing values inputed by bar owners
 
-  var barName = $('.bar-name').val();
-  var barLocation = $('.bar-location').val();
-  var barPhone = $('.bar-phone').val();
-  var barEmail = $('.bar-email').val();
-  var barUserName = $('.bar-user-name').val();
-  var barPassword = $('.bar-password').val();
-  var barVerifyPassword = $('.bar-verify-password').val();
+    var barName = $('.bar-name').val();
+    var barLocation = $('.bar-location').val();
+    var barPhone = $('.bar-phone').val();
+    var barEmail = $('.bar-email').val();
+    var barUserName = $('.bar-user-name').val();
+    var barPassword = $('.bar-password').val();
+    var barVerifyPassword = $('.bar-verify-password').val();
 
-  // Setting inputs into Parse as objects  
+    // Setting inputs into Parse as objects  
 
-  bar.set("barName", "bar-name");
-  bar.set("barLocation", "bar-location");
-  bar.set("barPhone", "bar-phone");
-  bar.set("barEmail", "bar-email");
-  bar.set("barUsername", "bar-username");
-  bar.set("barPassword", "bar-password");
-  bar.set("barVerifyPassword", "bar-verify-password");
-   
+    bar.set("barName", "bar-name");
+    bar.set("barLocation", "bar-location");
+    bar.set("barPhone", "bar-phone");
+    bar.set("barEmail", "bar-email");
+    bar.set("barUsername", "bar-username");
+    bar.set("barPassword", "bar-password");
+    bar.set("barVerifyPassword", "bar-verify-password");
 
-   
-  bar.signUp(null, {
-    success: function(bar) {
-      $('.bar-name').val('');
-      $('.bar-location').val('');
-      $('.bar-phone').val('');
-      $('.bar-email').val('');
-      $('.bar-user-name').val('');
-      $('.bar-password').val('');
-      $('.bar-verify-password').val('');
-    },
-    error: function(bar, error) {
-      // Show the error message somewhere and let the bar try again.
-      alert("Error: " + error.code + " " + error.message);
-    }
-  });
+
+
+    bar.signUp(null, {
+        success: function(bar) {
+            $('.bar-name').val('');
+            $('.bar-location').val('');
+            $('.bar-phone').val('');
+            $('.bar-email').val('');
+            $('.bar-user-name').val('');
+            $('.bar-password').val('');
+            $('.bar-verify-password').val('');
+        },
+        error: function(bar, error) {
+            // Show the error message somewhere and let the bar try again.
+            alert("Error: " + error.code + " " + error.message);
+        }
+    });
 });
