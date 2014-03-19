@@ -15,6 +15,10 @@ body {
     padding-bottom: 0;
 }
 
+.container {
+    width: 960px;
+    height: 1500px;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
@@ -67,9 +71,9 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-    .container {
+  /*  .container {
         max-width: 730px;
-    }
+    }*/
 
     /* Remove the padding we set earlier */
     .header,
@@ -390,6 +394,34 @@ body {
     height: 100px;
 }
 
+.profile-box {
+    display: inline-block;
+    background-color: red;
+    width: 500px;
+    height: 300px;
+    vertical-align: top;
+    margin-top: 50px;
+
+}
+
+.search-box {
+    display: inline-block;
+    background-color: yellow;
+    width: 300px;
+    height: 500px;
+    vertical-align: top;
+    float: right;
+    margin-top: 50px;
+
+}
+
+.showcase-box {
+    background-color: green;
+    width: 500px;
+    height: 300px;
+    vertical-align: top;
+    margin-top: 50px;
+}
 
 
 
