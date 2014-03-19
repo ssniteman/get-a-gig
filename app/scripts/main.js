@@ -61,6 +61,7 @@ $('.save-button-musician').click(function() {
             alert("Error: " + error.code + " " + error.message);
         }
     });
+  });
 
 
 $('.save-button-bar').click(function() {
@@ -69,13 +70,13 @@ $('.save-button-bar').click(function() {
 
   // capturing values inputed by bar owners
 
-  var barName $('.bar-name').val();
-  var barLocation $('.bar-location').val();
-  var barPhone $('.bar-phone').val();
-  var barEmail $('.bar-email').val();
-  var barUserName $('.bar-user-name').val();
-  var barPassword $('.bar-password').val();
-  var barVerifyPassword $('.bar-verify-password').val();
+  var barName = $('.bar-name').val();
+  var barLocation = $('.bar-location').val();
+  var barPhone = $('.bar-phone').val();
+  var barEmail = $('.bar-email').val();
+  var barUserName = $('.bar-user-name').val();
+  var barPassword = $('.bar-password').val();
+  var barVerifyPassword = $('.bar-verify-password').val();
 
   // Setting inputs into Parse as objects  
 
