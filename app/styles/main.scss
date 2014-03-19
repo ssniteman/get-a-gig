@@ -397,11 +397,19 @@ body {
 .profile-box {
     display: inline-block;
     background-color: red;
-    width: 500px;
+    width: 550px;
     height: 300px;
     vertical-align: top;
     margin-top: 50px;
 
+}
+
+.showcase-box {
+    background-color: green;
+    width: 550px;
+    height: 300px;
+    vertical-align: top;
+    margin-top: 50px;
 }
 
 .search-box {
@@ -415,13 +423,6 @@ body {
 
 }
 
-.showcase-box {
-    background-color: green;
-    width: 500px;
-    height: 300px;
-    vertical-align: top;
-    margin-top: 50px;
-}
 
 
 
