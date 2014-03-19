@@ -47,7 +47,14 @@ $('.save-button-musician').click(function() {
 
     musician.signUp(null, {
         success: function(musician) {
-            // Hooray! Let them use the app now.
+            $('.musician-name').val('');
+            $('.solo-or-band').val('');
+            $('.musician-location').val('');
+            $('.musician-phone').val('');
+            $('.musician-email').val('');
+            $('.musician-username').val('');
+            $('.musician-password').val('');
+            $('.musician-verify-password').val('');
         },
         error: function(musician, error) {
             // Show the error message somewhere and let the user try again.
