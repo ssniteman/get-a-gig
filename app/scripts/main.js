@@ -16,16 +16,6 @@ $(function() {
 
 }),
 
-// code for CURRENT USERS - Don't need to sign-in everytime
-
-var currentUser = Parse.User.current();
-if (currentUser) {
-    $('login').hide()
-
-}
-
-
-
 
 
 
@@ -37,37 +27,24 @@ $('.save-button-musician').click(function() {
 
     // capturing values that were inputed by musicians
 
-    var musicianName = $('.musician-name').val();
-    var musicianType = $('.solo-or-band').val();
-    var musicianLocation = $('.musician-location').val();
-    var musicianPhone = $('.musician-phone').val();
-    var musicianEmail = $('.musician-email').val();
-    var musicianUsername = $('.musician-username').val();
-    var musicianPassword = $('.musician-password').val();
-    var musicianVerifyPassword = $('.musician-verify-password').val();
-
+    var name = $('.musician-name').val();
+    var email = $('.musician-name').val();
+    var username = $('.musician-username').val();
+    var password = $('.musician-password').val();
+    var verifyPassword = $('.musician-verify-password').val();
+    var type = "musician"
     // setting inputs into Parse as objects
 
-    musician.set("musicianName", "musician-name");
-    musician.set("musicianType", "solo-or-band");
-    musician.set("musicianLocation", "musician-location");
-    musician.set("musicianPhone", "musician-phone");
-    musician.set("musicianEmail", "musician-email");
-    musician.set("musicianUsername", "musician-username");
-    musician.set("musicianPassword", "musician-password");
-    musician.set("musicianVerifyPassword", "musician-verify-password");
+    musician.set("name", $('.musician-name').val());
+    musician.set("username", $('.musician-username').val());
+    musician.set("email", $('.musician-email').val());
+    musician.set("password", $('.musician-password').val());
+    musician.set("verifyPassword", $('.musician-verify-password').val());
 
 
     musician.signUp(null, {
         success: function(musician) {
-            $('.musician-name').val('');
-            $('.solo-or-band').val('');
-            $('.musician-location').val('');
-            $('.musician-phone').val('');
-            $('.musician-email').val('');
-            $('.musician-username').val('');
-            $('.musician-password').val('');
-            $('.musician-verify-password').val('');
+
         },
         error: function(musician, error) {
             // Show the error message somewhere and let the user try again.
@@ -76,7 +53,7 @@ $('.save-button-musician').click(function() {
     });
 });
 
-// 
+// me
 
 $('.save-button-bar').click(function() {
     console.log('bar button firing')
@@ -84,13 +61,14 @@ $('.save-button-bar').click(function() {
 
     // capturing values inputed by bar owners
 
-    var barName = $('.bar-name').val();
+    var name = $('.bar-name').val();
     var barLocation = $('.bar-location').val();
     var barPhone = $('.bar-phone').val();
     var barEmail = $('.bar-email').val();
     var barUserName = $('.bar-user-name').val();
     var barPassword = $('.bar-password').val();
     var barVerifyPassword = $('.bar-verify-password').val();
+    var userType = "bar";
 
     // Setting inputs into Parse as objects  
 
@@ -122,3 +100,25 @@ $('.save-button-bar').click(function() {
 });
 
 // end of sending info to parse for sign-up users
+
+
+
+// code for CURRENT USERS to sign-in
+
+// $('.login-btn').on('click', function() {
+//     var musician-username
+
+
+// })
+
+
+
+
+
+// code for CURRENT USERS - Don't need to sign-in everytime
+
+// var currentUser = Parse.User.current();
+// if (currentUser) {
+//     $('login').hide()
+
+// }
