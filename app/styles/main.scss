@@ -15,7 +15,8 @@ body {
     padding-bottom: 0;
 }
 
-.container {
+.container-two {
+    margin: 0 auto;
     width: 960px;
     height: 1500px;
 }
@@ -71,9 +72,9 @@ body {
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /*  .container {
+    .container {
         max-width: 730px;
-    }*/
+    }
 
     /* Remove the padding we set earlier */
     .header,
@@ -388,6 +389,10 @@ body {
 
 /*musician profile view*/
 
+.profile-background {
+    background-color: silver;
+}
+
 .main-header {
     background-color: black;
     width: 100%;
@@ -396,9 +401,9 @@ body {
 
 .profile-box {
     display: inline-block;
-    background-color: red;
-    width: 550px;
-    height: 300px;
+    background-color: snow;
+    width: 630px;
+    height: 280px;
     vertical-align: top;
     margin-top: 50px;
     float: left;
@@ -406,18 +411,18 @@ body {
 }
 
 .showcase-box {
-    background-color: green;
-    width: 550px;
-    height: 600px;
+    background-color: snow;
+    width: 630px;
+    height: 720px;
     vertical-align: top;
-    margin-top: 50px;
+    margin-top: 10px;
     float: left;
 }
 
 .search-box {
     display: inline-block;
-    background-color: yellow;
-    width: 300px;
+    background-color: snow;
+    width: 320px;
     height: 500px;
     vertical-align: top;
     float: right;
@@ -427,12 +432,12 @@ body {
 
 .messages-box {
     display: inline-block;
-    background-color: orange;
-    width: 300px;
+    background-color: snow;
+    width: 320px;
     height: 500px;
     vertical-align: top;
     float: right;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 
