@@ -32,7 +32,7 @@ $('.save-button-musician').click(function() {
     var username = $('.musician-username').val();
     var password = $('.musician-password').val();
     var verifyPassword = $('.musician-verify-password').val();
-    var type = "musician"
+    var userType = "musician"
     // setting inputs into Parse as objects
 
     musician.set("name", $('.musician-name').val());
@@ -53,72 +53,74 @@ $('.save-button-musician').click(function() {
     });
 });
 
-// me
 
 $('.save-button-bar').click(function() {
-    console.log('bar button firing')
-    var bar = new Parse.User();
+        console.log('bar button firing')
+        var bar = new Parse.User();
 
-    // capturing values inputed by bar owners
+        // capturing values inputed by bar owners
 
-    var name = $('.bar-name').val();
-    var barLocation = $('.bar-location').val();
-    var barPhone = $('.bar-phone').val();
-    var barEmail = $('.bar-email').val();
-    var barUserName = $('.bar-user-name').val();
-    var barPassword = $('.bar-password').val();
-    var barVerifyPassword = $('.bar-verify-password').val();
-    var userType = "bar";
+        var name = $('.bar-name').val();
+        var email = $('.bar-email').val();
+        var username = $('.bar-username').val();
+        var password = $('.bar-password').val();
+        var verifyPassword = $('.bar-verify-password').val();
+        var userType = "bar";
 
-    // Setting inputs into Parse as objects  
+        // Setting inputs into Parse as objects  
 
-    bar.set("barName", "bar-name");
-    bar.set("barLocation", "bar-location");
-    bar.set("barPhone", "bar-phone");
-    bar.set("barEmail", "bar-email");
-    bar.set("barUsername", "bar-username");
-    bar.set("barPassword", "bar-password");
-    bar.set("barVerifyPassword", "bar-verify-password");
+        bar.set("name", $('.bar-name').val(); bar.set("username", $('.bar-email').val(); bar.set("password", $('.bar-password').val(); bar.set("verifyPassword", $('.bar-verify-password').val();
 
 
-
-    bar.signUp(null, {
-        success: function(bar) {
-            $('.bar-name').val('');
-            $('.bar-location').val('');
-            $('.bar-phone').val('');
-            $('.bar-email').val('');
-            $('.bar-user-name').val('');
-            $('.bar-password').val('');
-            $('.bar-verify-password').val('');
-        },
-        error: function(bar, error) {
-            // Show the error message somewhere and let the bar try again.
-            alert("Error: " + error.code + " " + error.message);
-        }
-    });
-});
-
-// end of sending info to parse for sign-up users
-
-
-
-// code for CURRENT USERS to sign-in
-
-// $('.login-btn').on('click', function() {
-//     var musician-username
-
-
-// })
+                    bar.signUp(null, {
+                        success: function(bar) {
+                            $('.bar-name').val('');
+                            $('.bar-location').val('');
+                            $('.bar-phone').val('');
+                            $('.bar-email').val('');
+                            $('.bar-user-name').val('');
+                            $('.bar-password').val('');
+                            $('.bar-verify-password').val('');
+                        },
+                        error: function(bar, error) {
+                            // Show the error message somewhere and let the bar try again.
+                            alert("Error: " + error.code + " " + error.message);
+                        }
+                    });
+                });
+                // end of sending info to parse for sign-up users
 
 
 
 
 
-// code for CURRENT USERS - Don't need to sign-in everytime
 
-// var currentUser = Parse.User.current();
-// if (currentUser) {
-//     $('login').hide()
 
-// }
+
+                // code for CURRENT USERS to sign-in
+
+                // $('.login-btn').on('click', function() {
+                //     var musician-username
+
+
+                // })
+
+
+
+
+
+                // code for CURRENT USERS - Don't need to sign-in everytime
+
+                // var currentUser = Parse.User.current();
+                // if (currentUser) {
+                //     $('login').hide()
+
+                // }
+
+                //     user.attributes = {
+                //   musicianName: "jake"
+                // }
+
+                // user.attributes = {
+                //   barName: "cool bar"
+                // }
