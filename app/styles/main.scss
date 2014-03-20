@@ -481,10 +481,15 @@ body {
     }
 
     p {
+        display: inline-block;
         line-height: 5px;
         font-weight: 300;
         color: gray;
     }
+}
+
+.glyphicon-map-marker {
+    color: rgb(51, 51, 51);
 }
 
 .musician-edit-button {
@@ -518,7 +523,7 @@ body {
 .profile-divide {
     width: 100%;
     height: 1px;
-    background-color: rgb(51, 51, 51);
+    background-color: #dd473d;
 }
 
 .showcase-box {
