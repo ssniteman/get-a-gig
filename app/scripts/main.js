@@ -6,6 +6,8 @@ $('.sign-in-btn').click(function() {
     $('.create-account-btn').addClass('active');
 });
 
+
+
 // saving musician sign-up to parse
 
 $(function() {
@@ -13,6 +15,21 @@ $(function() {
     Parse.initialize("3iYwTMywkleelnVUpiZdaXPPqVpvDsxw5qsJ1pev", "xLRITPtlktBrAiar3Xfk83Rs1isM23IbUHdXbr82");
 
 }),
+
+// code for CURRENT USERS - Don't need to sign-in everytime
+
+var currentUser = Parse.User.current();
+if (currentUser) {
+    $('login').hide()
+
+}
+
+
+
+
+
+
+// sending info up to parse once ACCOUNT IS CREATED
 
 $('.save-button-musician').click(function() {
     console.log('musician button firing function')
@@ -59,6 +76,7 @@ $('.save-button-musician').click(function() {
     });
 });
 
+// 
 
 $('.save-button-bar').click(function() {
     console.log('bar button firing')
@@ -102,3 +120,5 @@ $('.save-button-bar').click(function() {
         }
     });
 });
+
+// end of sending info to parse for sign-up users
