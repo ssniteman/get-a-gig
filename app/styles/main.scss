@@ -434,7 +434,7 @@ body {
     }
 }
 
-.profile-box {
+.musician-profile-box {
     display: inline-block;
     background-color: snow;
     width: 630px;
@@ -442,7 +442,19 @@ body {
     vertical-align: top;
     margin-top: 100px;
     float: left;
+}
 
+.musician-profile-image-div {
+    margin: 20px 20px 20px 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+
+    .musician-avatar {
+        width: 150px;
+        height: auto;
+    }
 }
 
 .showcase-box {
