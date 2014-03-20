@@ -383,7 +383,7 @@ body {
 
 
 
-/*musician profile view*/
+/*musician profile view start*/
 
 .musician-page-container {
     margin: 0 auto;
@@ -547,7 +547,7 @@ body {
             font-weight: 200;
             letter-spacing: 2px;
             margin-top: 20px;
-            color: #dd473d;
+            color: silver;
         }
     }
 
@@ -565,6 +565,7 @@ body {
             letter-spacing: 2px;
             margin-top: 20px;
             color: #dd473d;
+            opacity: .8;
         }
     }
 
@@ -581,7 +582,7 @@ body {
             font-weight: 200;
             letter-spacing: 2px;
             margin-top: 20px;
-            color: #dd473d;
+            color: silver;
         }
 
     }
@@ -599,12 +600,14 @@ body {
             letter-spacing: 2px;
             margin-top: 20px;
             color: #dd473d;
+            opacity: .8;
         }
-
     }
+}
+/*musician profile view end*/
+
 
         
-}
 
 .showcase-box {
     background-color: snow;
