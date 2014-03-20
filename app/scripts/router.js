@@ -1,7 +1,8 @@
 var MainRouter = Backbone.Router.extend({
 
     routes: {
-        "": "homePage"
+        "": "homePage",
+        "/: createaccount": "createAccount"
     },
 
     initialize: function() {
@@ -10,7 +11,20 @@ var MainRouter = Backbone.Router.extend({
     },
 
     homePage: function() {
-        new SetUpView()
-    }
+
+        // if (Parse.User.current()) {
+        //     // new ProfileView();
+
+        // } else {
+            new SetUpView()
+
+        // }
+    },
+
+    // createAccount: function() {
+
+    //     new CreateAccountView()
+
+    // }
 
 })

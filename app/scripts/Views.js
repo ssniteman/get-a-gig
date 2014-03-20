@@ -19,12 +19,9 @@ var SetUpView = Parse.View.extend({
     },
 
     login: function() {
-        $('.sign-in-btn').click(function() {
-            $(this).addClass('active');
-            $('.sign-in-drop').css('height', '145px');
-            $('.create-account-btn').addClass('active');
-        });
-
+        $('.sign-in-btn').addClass('active');
+        $('.sign-in-drop').css('height', '145px');
+        $('.create-account-btn').addClass('active');
     },
 
     createAccountView: function() {
@@ -32,3 +29,21 @@ var SetUpView = Parse.View.extend({
     }
 
 })
+
+
+/////////////////Create Account View/////////////////////////////
+
+// var CreateAccountView = Parse.View.Extend({
+
+//     renderedTemplate: _.template($('#create-account-template').text()),
+
+//     events: {
+
+//     	"click "
+
+//     },
+
+
+
+
+// })
