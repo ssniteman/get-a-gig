@@ -28,19 +28,21 @@ $('.save-button-musician').click(function() {
     // capturing values that were inputed by musicians
 
     var name = $('.musician-name').val();
-    var email = $('.musician-name').val();
+    var email = $('.musician-email').val();
     var username = $('.musician-username').val();
     var password = $('.musician-password').val();
     var verifyPassword = $('.musician-verify-password').val();
-    var userType = "musician"
+    var userType = "musician";
     // setting inputs into Parse as objects
 
-    musician.set("name", $('.musician-name').val());
-    musician.set("username", $('.musician-username').val());
-    musician.set("email", $('.musician-email').val());
-    musician.set("password", $('.musician-password').val());
-    musician.set("verifyPassword", $('.musician-verify-password').val());
+    musician.set('name', $('.musician-name').val());
+    musician.set('email', $('.musician-email').val());
+    musician.set('username', $('.musician-username').val());
+    musician.set('password', $('.musician-password').val());
+    musician.set('verifyPassword', $('.musician-verify-password').val());
+    musician.set('userType', "musician");
 
+    console.log('pushing to parse')
 
     musician.signUp(null, {
         success: function(musician) {
@@ -55,72 +57,75 @@ $('.save-button-musician').click(function() {
 
 
 $('.save-button-bar').click(function() {
-        console.log('bar button firing')
-        var bar = new Parse.User();
+    console.log('bar button firing')
+    var bar = new Parse.User();
 
-        // capturing values inputed by bar owners
+    // capturing values inputed by bar owners
 
-        var name = $('.bar-name').val();
-        var email = $('.bar-email').val();
-        var username = $('.bar-username').val();
-        var password = $('.bar-password').val();
-        var verifyPassword = $('.bar-verify-password').val();
-        var userType = "bar";
+    var name = $('.bar-name').val();
+    var email = $('.bar-email').val();
+    var username = $('.bar-username').val();
+    var password = $('.bar-password').val();
+    var verifyPassword = $('.bar-verify-password').val();
+    var userType = "bar";
 
-        // Setting inputs into Parse as objects  
+    // Setting inputs into Parse as objects  
 
-        bar.set("name", $('.bar-name').val(); bar.set("username", $('.bar-email').val(); bar.set("password", $('.bar-password').val(); bar.set("verifyPassword", $('.bar-verify-password').val();
-
-
-                    bar.signUp(null, {
-                        success: function(bar) {
-                            $('.bar-name').val('');
-                            $('.bar-location').val('');
-                            $('.bar-phone').val('');
-                            $('.bar-email').val('');
-                            $('.bar-user-name').val('');
-                            $('.bar-password').val('');
-                            $('.bar-verify-password').val('');
-                        },
-                        error: function(bar, error) {
-                            // Show the error message somewhere and let the bar try again.
-                            alert("Error: " + error.code + " " + error.message);
-                        }
-                    });
-                });
-                // end of sending info to parse for sign-up users
+    bar.set("name", $('.bar-name').val());
+    bar.set("username", $('.bar-email').val());
+    bar.set("password", $('.bar-password').val());
+    bar.set("verifyPassword", $('.bar-verify-password').val());
 
 
-
-
-
-
-
-
-                // code for CURRENT USERS to sign-in
-
-                // $('.login-btn').on('click', function() {
-                //     var musician-username
-
-
-                // })
+    bar.signUp(null, {
+        success: function(bar) {
+            $('.bar-name').val('');
+            $('.bar-location').val('');
+            $('.bar-phone').val('');
+            $('.bar-email').val('');
+            $('.bar-user-name').val('');
+            $('.bar-password').val('');
+            $('.bar-verify-password').val('');
+        },
+        error: function(bar, error) {
+            // Show the error message somewhere and let the bar try again.
+            alert("Error: " + error.code + " " + error.message);
+        }
+    });
+});
+// end of sending info to parse for sign-up users
 
 
 
 
 
-                // code for CURRENT USERS - Don't need to sign-in everytime
 
-                // var currentUser = Parse.User.current();
-                // if (currentUser) {
-                //     $('login').hide()
 
-                // }
 
-                //     user.attributes = {
-                //   musicianName: "jake"
-                // }
+// code for CURRENT USERS to sign-in
 
-                // user.attributes = {
-                //   barName: "cool bar"
-                // }
+// $('.login-btn').on('click', function() {
+//     var musician-username
+
+
+// })
+
+
+
+
+
+// code for CURRENT USERS - Don't need to sign-in everytime
+
+// var currentUser = Parse.User.current();
+// if (currentUser) {
+//     $('login').hide()
+
+// }
+
+//     user.attributes = {
+//   musicianName: "jake"
+// }
+
+// user.attributes = {
+//   barName: "cool bar"
+// }
