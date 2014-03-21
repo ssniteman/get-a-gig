@@ -33,17 +33,17 @@ var SetUpView = Parse.View.extend({
 
 /////////////////Create Account View/////////////////////////////
 
-// var CreateAccountView = Parse.View.Extend({
+var CreateAccountView = Parse.View.Extend({
 
-//     renderedTemplate: _.template($('#create-account-template').text()),
+    renderedTemplate: _.template($('#create-account-template').text()),
 
-//     events: {
+    events: {
 
-//     	"click "
+        "click "
 
-//     },
-
-
+    },
 
 
-// })
+
+
+})
