@@ -390,15 +390,15 @@ body {
     width: 960px;
 }
 
-.profile-background {
+.profile-page-background {
     z-index: -1000;
     position: absolute;
-    background-color: silver;
     width: 100%;
-    height: 1200px;
+    height: auto;
 }
 
 .main-header {
+    z-index: 100;
     position: fixed;
     background-color: rgb(51, 51, 51);
     width: 100%;
