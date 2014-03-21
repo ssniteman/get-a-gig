@@ -607,17 +607,8 @@ body {
 /*musician profile view end*/
 
 
-        
 
-.showcase-box {
-    background-color: snow;
-    width: 630px;
-    height: 720px;
-    vertical-align: top;
-    margin-top: 10px;
-    float: left;
-}
-
+/*search view start*/
 .search-box {
     display: inline-block;
     background-color: snow;
@@ -626,7 +617,192 @@ body {
     vertical-align: top;
     float: right;
     margin-top: 100px;
+}
 
+.musician-search-header {
+    width: 320px;
+    height: 60px;
+    background-color: #dd473d;
+
+    .musician-search-header-title {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: snow;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 1px;
+    }
+}
+
+.musician-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-main-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.location-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-location-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.location-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.genre-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-genre-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.genre-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.availability-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-availability-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.availability-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.section-search-btn {
+    width: 200px;
+    height: 45px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 110px;
+
+    &:hover {
+        background-color: rgb(168,48,39);
+    }
+}
+
+
+
+
+/*search view end*/
+
+
+.showcase-box {
+    background-color: snow;
+    width: 630px;
+    height: 720px;
+    vertical-align: top;
+    margin-top: 10px;
+    float: left;
 }
 
 .messages-box {
