@@ -383,7 +383,7 @@ body {
 
 
 
-/*musician profile view*/
+/*musician profile view start*/
 
 .musician-page-container {
     margin: 0 auto;
@@ -439,7 +439,7 @@ body {
 
 .musician-profile-box {
     display: inline-block;
-    background-color: snow;
+    background-color: #dd473d;
     width: 630px;
     height: 280px;
     vertical-align: top;
@@ -464,57 +464,60 @@ body {
 .musician-profile-main-info {
     display: inline-block;
     vertical-align: top;
-    margin-top: 65px;
+    margin-top: 80px;
 
     h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: inline-block;
         line-height: 13px;
         font-size: 24px;
         letter-spacing: 1px;
-        color: rgb(51, 51, 51);
+        color: snow;
     }
 
     h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: inline-block;
         font-size: 18px;
         font-weight: 300;
         letter-spacing: 1px;
-        color: rgb(51, 51, 51);
+        color: snow;
     }
 
     p {
+        letter-spacing: 1px;
         display: inline-block;
         line-height: 5px;
         font-weight: 300;
-        color: gray;
+        color: snow;
     }
 }
 
-.glyphicon-map-marker {
-    color: rgb(51, 51, 51);
-}
-
 .musician-edit-button {
-    background-color: rgb(51, 51, 51);
     width: 121px;
     height: 60px;
     display: inline-block;
     float: right;
 
     .edit-button {
-        font-weight: 100;
+        font-weight: 200;
         letter-spacing: 2px;
         display: inline-block;
         width: 121px;
         height: 60px;
-        color: white;
+        color: #dd473d;
         border: none;
-        background-color: rgb(51, 51, 51);
+        background-color: snow;
         line-height: 50px;
         text-align: center;
         padding-top: 3px;
         margin: 0 auto;
 
         &:hover {
-            background-color: rgba(0, 0, 0, .3);
+            background-color: snow;
+            opacity: .5;
         }
     }
 }
@@ -522,19 +525,90 @@ body {
 
 .profile-divide {
     width: 100%;
-    height: 1px;
-    background-color: #dd473d;
-}
-
-.showcase-box {
     background-color: snow;
-    width: 630px;
-    height: 720px;
-    vertical-align: top;
-    margin-top: 10px;
-    float: left;
 }
 
+.musician-profile-secondary-info {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: snow;
+
+    .nightly-rate {
+        background-color: snow;
+        display: inline-block;
+        height: 60px;
+        width: 160px;
+        border-right: 1px solid silver;
+
+        .rate-title {
+            font-size: 17px;
+            display: inline-block;
+            font-weight: 200;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            color: silver;
+        }
+    }
+
+    .nightly-rate-price {
+        background-color: snow;
+        display: inline-block;
+        height: 60px;
+        width: 150px;
+        border-right: 1px solid silver;
+
+        .price {
+            font-size: 17px;
+            display: inline-block;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            color: #dd473d;
+            opacity: .8;
+        }
+    }
+
+    .availability-title {
+        background-color: snow;
+        display: inline-block;
+        height: 60px;
+        width: 160px;
+        border-right: 1px solid silver;
+
+        .available-copy  {
+            font-size: 17px;
+            display: inline-block;
+            font-weight: 200;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            color: silver;
+        }
+
+    }
+
+    .availability {
+        background-color: snow;
+        display: inline-block;
+        height: 60px;
+        width: 140px;
+
+        .available-calender {
+            font-size: 16px;
+            display: inline-block;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            color: #dd473d;
+            opacity: .8;
+        }
+    }
+}
+/*musician profile view end*/
+
+
+
+/*search view start*/
 .search-box {
     display: inline-block;
     background-color: snow;
@@ -543,7 +617,192 @@ body {
     vertical-align: top;
     float: right;
     margin-top: 100px;
+}
 
+.musician-search-header {
+    width: 320px;
+    height: 60px;
+    background-color: #dd473d;
+
+    .musician-search-header-title {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: snow;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 1px;
+    }
+}
+
+.musician-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-main-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.location-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-location-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.location-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.genre-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-genre-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.genre-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.availability-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-availability-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.availability-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.section-search-btn {
+    width: 200px;
+    height: 45px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 110px;
+
+    &:hover {
+        background-color: rgb(168,48,39);
+    }
+}
+
+
+
+
+/*search view end*/
+
+
+.showcase-box {
+    background-color: snow;
+    width: 630px;
+    height: 720px;
+    vertical-align: top;
+    margin-top: 10px;
+    float: left;
 }
 
 .messages-box {
