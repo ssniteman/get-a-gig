@@ -1,18 +1,11 @@
-// sign in button drop down
-
-$('.sign-in-btn').click(function() {
-    $(this).addClass('active');
-    $('.sign-in-drop').css('height', '145px');
-    $('.create-account-btn').addClass('active');
-});
-
-
-
 // saving musician sign-up to parse
 
 $(function() {
 
     Parse.initialize("3iYwTMywkleelnVUpiZdaXPPqVpvDsxw5qsJ1pev", "xLRITPtlktBrAiar3Xfk83Rs1isM23IbUHdXbr82");
+
+    window.router = new MainRouter();
+    Backbone.history.start();
 
 }),
 
@@ -93,6 +86,8 @@ $('.save-button-bar').click(function() {
         }
     });
 });
+
+
 // end of sending info to parse for sign-up users
 
 
