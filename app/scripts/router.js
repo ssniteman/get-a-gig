@@ -12,8 +12,9 @@ var MainRouter = Backbone.Router.extend({
 
     homePage: function() {
 
-        // if (Parse.User.current()) {
-        //     // new ProfileView();
+        // if (Parse.User.current(musician)) {
+        //     new YourMusicianProfileView();
+            // new YourBarProfileView
 
         // } else {
         new SetUpView()

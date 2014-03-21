@@ -38,11 +38,11 @@ var CreateAccountView = Parse.View.extend({
 
     renderedTemplate: _.template($('#create-account-template').text()),
 
-    // events: {
+    events: {
 
-    //     "click "
-
-    // },
+        "click .save-btn-musician": "musicianProfile",
+        "click .save-btn-bar": "barProfile"
+    },
 
     initialize: function() {
         $('.container-two').html(this.el)
@@ -51,8 +51,14 @@ var CreateAccountView = Parse.View.extend({
 
     render: function() {
         this.$el.html(this.renderedTemplate())
+    },
+
+    musicianProfile: function() {
+        new YourMusicianProfileView
+    },
+
+    barProfile: function() {
+        new YourBarProfileView
     }
 
-
-
-})
+});
