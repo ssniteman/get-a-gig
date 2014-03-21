@@ -10,7 +10,7 @@ var SetUpView = Parse.View.extend({
     },
 
     initialize: function() {
-        $('.container').append(this.el)
+        $('.container-two').append(this.el)
         this.render()
     },
 
@@ -25,24 +25,33 @@ var SetUpView = Parse.View.extend({
     },
 
     createAccountView: function() {
+        console.log('clicked create account')
         new CreateAccountView()
     }
 
-})
+});
 
 
 /////////////////Create Account View/////////////////////////////
 
-var CreateAccountView = Parse.View.Extend({
+var CreateAccountView = Parse.View.extend({
 
     renderedTemplate: _.template($('#create-account-template').text()),
 
-    events: {
+    // events: {
 
-        "click "
+    //     "click "
 
+    // },
+
+    initialize: function() {
+        $('.container-two').html(this.el)
+        this.render()
     },
 
+    render: function() {
+        this.$el.html(this.renderedTemplate())
+    }
 
 
 
