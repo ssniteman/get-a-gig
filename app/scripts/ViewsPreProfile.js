@@ -22,6 +22,31 @@ var SetUpView = Parse.View.extend({
         $('.sign-in-btn').addClass('active');
         $('.sign-in-drop').css('height', '145px');
         $('.create-account-btn').addClass('active');
+
+        ///////// current users can login ///////
+
+        // Parse.User.logIn('')
+
+        Parse.User.logIn("username", "password", {
+            success: function(musician) {
+
+                var query = new Parse.Query(Parse.User);
+                query.equalTo(userType, "musician"); // find all the musician
+                query.find({
+                    success: function(musician) {
+                        new YourMusicianProfileView()
+                    }
+                });
+
+            },
+            error: function(user, error) {
+                // The login failed. Check error to see why.
+            }
+        });
+
+
+
+
     },
 
     createAccountView: function() {

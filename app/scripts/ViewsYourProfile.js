@@ -1,9 +1,9 @@
-////////////////Your Musician Profile View////////////////////
+//////////////Your Musician Profile View////////////////////
 
-// var YourMusicianProfileView = Parse.View.extend({
+var YourMusicianProfileView = Parse.View.extend({
 
-//     renderedTemplate: _.template($('#your-musician-profile-template').text()),
+    renderedTemplate: _.template($('#your-musician-profile-template').text()),
 
 
 
-// })
+})
