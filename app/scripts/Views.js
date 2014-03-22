@@ -40,12 +40,12 @@ var CreateAccountView = Parse.View.extend({
 
     events: {
 
-        "click .save-btn-musician": "musicianProfile",
-        "click .save-btn-bar": "barProfile"
+        "click .save-button-musician": "musicianProfile",
+        "click .save-button-bar": "barProfile"
     },
 
     initialize: function() {
-        $('.container-two').html(this.el)
+        $('.container-two').append(this.el)
         this.render()
     },
 
@@ -54,21 +54,90 @@ var CreateAccountView = Parse.View.extend({
     },
 
     musicianProfile: function() {
-        new YourMusicianProfileView
+        console.log('musician button firing function')
+        var musician = new Parse.User();
+
+        // capturing values that were inputed by musicians
+
+        var name = $('.musician-name').val();
+        var email = $('.musician-email').val();
+        var username = $('.musician-username').val();
+        var password = $('.musician-password').val();
+        var verifyPassword = $('.musician-verify-password').val();
+        var userType = "musician";
+
+        // setting inputs into Parse as objects
+
+        musician.set('name', $('.musician-name').val());
+        musician.set('email', $('.musician-email').val());
+        musician.set('username', $('.musician-username').val());
+        musician.set('password', $('.musician-password').val());
+        musician.set('verifyPassword', $('.musician-verify-password').val());
+        musician.set('userType', "musician");
+
+        console.log('pushing to parse')
+
+        musician.signUp(null, {
+            success: function(musician) {
+
+            },
+            error: function(musician, error) {
+                // Show the error message somewhere and let the user try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+        new YourMusicianProfileView()
     },
 
-    barProfile: function() {
-        new YourBarProfileView
-    }
 
+    barProfile: function() {
+        console.log('bar button firing')
+        var bar = new Parse.User();
+
+        // capturing values inputed by bar owners
+
+        var name = $('.bar-name').val();
+        var email = $('.bar-email').val();
+        var username = $('.bar-username').val();
+        var password = $('.bar-password').val();
+        var verifyPassword = $('.bar-verify-password').val();
+        var userType = "bar";
+
+        // Setting inputs into Parse as objects  
+
+        bar.set("name", $('.bar-name').val());
+        bar.set("username", $('.bar-email').val());
+        bar.set("password", $('.bar-password').val());
+        bar.set("verifyPassword", $('.bar-verify-password').val());
+
+
+        bar.signUp(null, {
+            success: function(bar) {
+                $('.bar-name').val('');
+                $('.bar-location').val('');
+                $('.bar-phone').val('');
+                $('.bar-email').val('');
+                $('.bar-user-name').val('');
+                $('.bar-password').val('');
+                $('.bar-verify-password').val('');
+            },
+            error: function(bar, error) {
+                // Show the error message somewhere and let the bar try again.
+                alert("Error: " + error.code + " " + error.message);
+            }
+        });
+
+        new YourBarProfileView()
+    }
 });
 
 ////////////////Your Musician Profile View////////////////////
 
-var YourMusicianProfileView = Parse.View.extend({
+// var YourMusicianProfileView = Parse.View.extend({
 
-    renderedTemplate: _.template($('#your-musician-profile-template').text()),
+//     renderedTemplate: _.template($('#your-musician-profile-template').text()),
 
 
 
-})
+// })
