@@ -1,31 +1,35 @@
 var MainRouter = Backbone.Router.extend({
 
-        routes: {
-            "": "homePage",
-            "createaccount": "createAccount"
-        },
+    routes: {
+        "": "homePage",
+        "createaccount": "createAccount"
+    },
 
-        initialize: function() {
-            console.log('a router is born')
+    initialize: function() {
+        console.log('a router is born')
 
-        },
+    },
 
-        homePage: function() {
+    homePage: function() {
 
         // if (Parse.User.current(musician)) {
         //     new YourMusicianProfileView();
-        //     new YourBarProfileView
+        // } else {
+        new SetUpView()
 
-                // } else {
-                new SetUpView()
+        // },
 
-                // }
-            },
+        // if (Parse.User.current(bar)) {
+        //     new YourBarProfileView();
+        // } else {
+        //     new SetUpView()
+        // }
+    },
 
-            createAccount: function() {
+    createAccount: function() {
 
-                new CreateAccountView()
+        new CreateAccountView()
 
-            }
+    },
 
-        })
+})
