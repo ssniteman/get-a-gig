@@ -282,58 +282,58 @@ body {
 
 .modal-dialog {
     border-radius: 1px;
-    width: 450px;
-    padding-top: 150px;
+    width: 490px;
+    padding-top: 25px;
     padding-bottom: 30px;
 }
 
 .modal-content {
+    width: 500px;
     position: relative;
-    background-color: rgb(51, 51, 51);
-    border-radius: 3px;
+    background-color: snow;
+    border-radius: 10px;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
     background-clip: padding-box;
     outline: none;
 }
 
 .modal-header {
+    background-color: rgb(51, 51, 51);
     border: none;
-}
+    height: 80px;
 
-.modal-title {
-    color: silver;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 200;
+    .modal-title {
+        color: silver;
+        line-height: 50px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 200;
+    }
 }
 
 .modal-footer {
     border: none;
+    margin-top: -19px;
+    padding: 0px 20px 30px;
+    text-align: right;
 }
 
 .input-group {
+    height: 50px;
+    width: 445px;
     padding: 10px;
+    padding: 10px 15px 10px 27px;
 }
 
 .input-group .form-control {
     color: silver;
-    background: #414141;
+    font-weight: 200;
+    background: snow;
     border-radius: 2px;
-    border: none;
+    border: 1px solid silver;
+    height: 50px;
     width: 100%;
     margin-bottom: 0;
-}
-
-.input-group-addon {
-    border: none;
-    padding: 6px 12px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1;
-    color: silver;
-    text-align: center;
-    background-color: #5F5F5F;
-    border-radius: 4px;
 }
 
 .cancel-button {
@@ -353,17 +353,17 @@ body {
 
 .save-button-musician {
     display: inline-block;
-    width: 121px;
-    height: 38px;
+    width: 404px;
+    height: 60px;
     color: white;
     border: none;
     border-radius: 2px;
     background-color: #dd473d;
     line-height: 32px;
     text-align: center;
-    padding-top: 3px;
+    padding-top: 14px;
     margin: 0 auto;
-    margin: 10px 10px 10px 110px;
+    margin: 10px 28px 12px 10px;
 }
 
 .save-button-bar {
@@ -393,8 +393,9 @@ body {
 .profile-page-background {
     z-index: -1000;
     position: absolute;
+    background-color: silver;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .main-header {
