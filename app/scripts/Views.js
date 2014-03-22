@@ -10,7 +10,7 @@ var SetUpView = Parse.View.extend({
     },
 
     initialize: function() {
-        $('.container').append(this.el)
+        $('.container-two').append(this.el)
         this.render()
     },
 
@@ -25,24 +25,49 @@ var SetUpView = Parse.View.extend({
     },
 
     createAccountView: function() {
+        console.log('clicked create account')
         new CreateAccountView()
     }
 
-})
+});
 
 
 /////////////////Create Account View/////////////////////////////
 
-var CreateAccountView = Parse.View.Extend({
+var CreateAccountView = Parse.View.extend({
 
     renderedTemplate: _.template($('#create-account-template').text()),
 
     events: {
 
-        "click "
-
+        "click .save-btn-musician": "musicianProfile",
+        "click .save-btn-bar": "barProfile"
     },
 
+    initialize: function() {
+        $('.container-two').html(this.el)
+        this.render()
+    },
+
+    render: function() {
+        this.$el.html(this.renderedTemplate())
+    },
+
+    musicianProfile: function() {
+        new YourMusicianProfileView
+    },
+
+    barProfile: function() {
+        new YourBarProfileView
+    }
+
+});
+
+////////////////Your Musician Profile View////////////////////
+
+var YourMusicianProfileView = Parse.View.extend({
+
+    renderedTemplate: _.template($('#your-musician-profile-template').text()),
 
 
 
