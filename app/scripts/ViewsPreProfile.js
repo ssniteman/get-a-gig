@@ -64,7 +64,7 @@ var CreateAccountView = Parse.View.extend({
     },
 
     initialize: function() {
-        $('.container-two').append(this.el)
+        $('.container-two').html(this.el)
         this.render()
     },
 
