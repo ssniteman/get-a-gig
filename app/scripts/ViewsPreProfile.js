@@ -10,6 +10,7 @@ var SetUpView = Parse.View.extend({
     },
 
     initialize: function() {
+        $('.profile-page-background').css('display', 'none')
         $('.container-two').append(this.el)
         this.render()
     },
@@ -64,6 +65,7 @@ var CreateAccountView = Parse.View.extend({
     },
 
     initialize: function() {
+        $('.profile-page-background').css('display', 'none')
         $('.container-two').html(this.el)
         this.render()
     },
@@ -107,6 +109,8 @@ var CreateAccountView = Parse.View.extend({
         });
 
         new YourMusicianProfileView()
+
+        console.log('firing your musician profile')
     },
 
 
