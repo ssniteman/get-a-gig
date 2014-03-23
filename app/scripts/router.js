@@ -2,7 +2,8 @@ var MainRouter = Backbone.Router.extend({
 
     routes: {
         "": "homePage",
-        "createaccount": "createAccount"
+        "createaccount": "createAccount",
+        "musicianprofile": "musicianProfile"
     },
 
     initialize: function() {
@@ -29,6 +30,12 @@ var MainRouter = Backbone.Router.extend({
     createAccount: function() {
 
         new CreateAccountView()
+
+    },
+
+    musicianProfile: function() {
+
+        new YourMusicianProfileView()
 
     },
 
