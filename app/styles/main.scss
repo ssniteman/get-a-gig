@@ -283,7 +283,7 @@ body {
 .modal-dialog {
     border-radius: 1px;
     width: 490px;
-    padding-top: 25px;
+    padding-top: 150px;
     padding-bottom: 30px;
 }
 
@@ -298,6 +298,7 @@ body {
 }
 
 .modal-header {
+    border-radius: 7px 7px 0px 0px;
     background-color: rgb(51, 51, 51);
     border: none;
     height: 80px;
