@@ -4,14 +4,15 @@ var SetUpView = Parse.View.extend({
 
     renderedTemplate: _.template($('#setupview-template').text()),
 
+    className: 'account-page',
+
     events: {
         "click .sign-in-btn": "login",
         "click .create-account-btn": "createAccountView"
     },
 
     initialize: function() {
-        $('.profile-page-background').css('display', 'none')
-        $('.container-two').append(this.el)
+        $('body').html(this.el)
         this.render()
     },
 
@@ -47,6 +48,7 @@ var SetUpView = Parse.View.extend({
     createAccountView: function() {
         console.log('clicked create account')
         new CreateAccountView()
+        console.log('rendered new create account view')
     }
 
 });
@@ -65,7 +67,9 @@ var CreateAccountView = Parse.View.extend({
     },
 
     initialize: function() {
-        $('.profile-page-background').css('display', 'none')
+        // $('.profile-page-background').css('display', 'none')
+        $('.sign-in').html('');
+        $('.create-account').html('');
         $('.container-two').html(this.el)
         this.render()
     },
@@ -100,7 +104,10 @@ var CreateAccountView = Parse.View.extend({
 
         musician.signUp(null, {
             success: function(musician) {
-
+                // window.location.href = '/#musicianprofile'
+                new YourMusicianProfileView({
+                    model: musician
+                })
             },
             error: function(musician, error) {
                 // Show the error message somewhere and let the user try again.
@@ -108,7 +115,6 @@ var CreateAccountView = Parse.View.extend({
             }
         });
 
-        new YourMusicianProfileView()
 
         console.log('firing your musician profile')
     },
@@ -144,6 +150,9 @@ var CreateAccountView = Parse.View.extend({
                 $('.bar-user-name').val('');
                 $('.bar-password').val('');
                 $('.bar-verify-password').val('');
+
+                new YourBarProfileView()
+
             },
             error: function(bar, error) {
                 // Show the error message somewhere and let the bar try again.
@@ -151,6 +160,5 @@ var CreateAccountView = Parse.View.extend({
             }
         });
 
-        new YourBarProfileView()
     }
 });
