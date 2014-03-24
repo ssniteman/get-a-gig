@@ -26,153 +26,151 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <img src="images/background-photo.jpg" class="background-image-one">
-
-          <div class="container">
-
-            <img src="images/logo-one.png" class="logo-one">
-
-          </div>
+   
 
 
 
-        <div class="container container-two">
 
-        
-             
-        </div>
 
-        <div class="profile-page-background">
-
-        </div>
 
 
 <!--//////////// SIGN-IN VIEW //////////// -->
 
 
         <script type="text/template" id="setupview-template">
-          <div class="sign-in">
-            <div class="sign-in-btn">Sign In</div>
-            <div class="sign-in-drop">
-              <input class="username" placeholder="username"></input>
-              <input class="password" placeholder="password"></input>
-              <div class="login-btn">Log In</div>
+          <img src="images/background-photo.jpg" class="background-image-one">
+          <div class="container">
+            <img src="images/logo-one.png" class="logo-one">
+          </div>
+              <div class="container container-two">
+              <div class="sign-in">
+                <div class="sign-in-btn">Sign In</div>
+                <div class="sign-in-drop">
+                  <input class="username" placeholder="username"></input>
+                  <input class="password" placeholder="password"></input>
+                  <div class="login-btn">Log In</div>
+                </div>
+              </div>
+              <div class="create-account">
+                  <a href="#createaccount"><div class="create-account-btn">Create Account</div></a>
+              </div>
             </div>
-          </div>
-          <div class="create-account">
-              <a href="#createaccount"><div class="create-account-btn">Create Account</div></a>
-          </div>
         </script>
 
 <!-- CREATE ACCOUNT VIEW -->
 
         <script type="text/template" id="create-account-template">
+          <img src="images/background-photo.jpg" class="background-image-one">
+          <div class="container">
+            <img src="images/logo-one.png" class="logo-one">
+          </div>
+          <div class="container container-two">
+              <a href="#musicianprofile"><p class="create-account-title">Create Account</p></a>
+                <div class="musician-account">
+                      <div class="band-btn" data-toggle="modal" data-target="#musicianModal">Musician / Band</div>
+                </div>
+                <div class="bar-account">
+                      <div class="bar-btn" data-toggle="modal" data-target="#barModal">Bar / Venue</div>
+                </div>
 
-          <a href="#musicianprofile"><p class="create-account-title">Create Account</p></a>
-            <div class="musician-account">
-                  <div class="band-btn" data-toggle="modal" data-target="#musicianModal">Musician / Band</div>
-            </div>
-            <div class="bar-account">
-                  <div class="bar-btn" data-toggle="modal" data-target="#barModal">Bar / Venue</div>
-            </div>
-
-           
-            <div class="modal fade" id="musicianModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Musician / Band Sign Up</h4>
-                  </div>
-                  <div class="modal-body">
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control musician-name" placeholder="Name / Band">
+               
+                <div class="modal fade" id="musicianModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Musician / Band Sign Up</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control musician-name" placeholder="Name / Band">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control solo-or-band" placeholder="Solo Artist / Band">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control musician-location" placeholder="Location">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control musician-phone" placeholder="Phone">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control musician-email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control musician-username" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control musician-password" placeholder="Password">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control musician-verify-password" placeholder="Verify Password">
+                        </div>
+                      </div>
+                      <div class="error-message"></div>
+                      <div class="modal-footer">
+                        <div type="button" class="cancel-button" data-dismiss="modal">Cancel</div>
+                        <a href="#musicianprofile"><div type="button" class="save-button-musician" data-dismiss="modal">Save changes</div></a>
+                      </div>
                     </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control solo-or-band" placeholder="Solo Artist / Band">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control musician-location" placeholder="Location">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control musician-phone" placeholder="Phone">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control musician-email" placeholder="Email">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control musician-username" placeholder="Username">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control musician-password" placeholder="Password">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control musician-verify-password" placeholder="Verify Password">
-                    </div>
-                  </div>
-                  <div class="error-message"></div>
-                  <div class="modal-footer">
-                    <div type="button" class="cancel-button" data-dismiss="modal">Cancel</div>
-                    <div type="button" class="save-button-musician" data-dismiss="modal">Save changes</div>
                   </div>
                 </div>
-              </div>
-            </div>
-          
+              
 
-            <div class="modal fade" id="barModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title" id="myModalLabel">Bar / Venue Sign Up</h4>
-                  </div>
-                  <div class="modal-body">
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control bar-name" placeholder="Bar / Venue">
+                <div class="modal fade" id="barModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Bar / Venue Sign Up</h4>
+                      </div>
+                      <div class="modal-body">
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control bar-name" placeholder="Bar / Venue">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control bar-location" placeholder="Location">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control bar-phone" placeholder="Phone">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control bar-email" placeholder="Email">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control bar-username" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control bar-password" placeholder="Password">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control bar-verify-password" placeholder="Verify Password">
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                        <div type="button" class="cancel-button" data-dismiss="modal">Cancel</div>
+                        <div type="button" class="save-button-bar" data-dismiss="modal">Save changes</div>
+                      </div>
                     </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control bar-location" placeholder="Location">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control bar-phone" placeholder="Phone">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control bar-email" placeholder="Email">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control bar-username" placeholder="Username">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control bar-password" placeholder="Password">
-                    </div>
-                    <div class="input-group">
-                      <span class="input-group-addon">@</span>
-                      <input type="text" class="form-control bar-verify-password" placeholder="Verify Password">
-                    </div>
-                  </div>
-                  <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
-                    <div type="button" class="cancel-button" data-dismiss="modal">Cancel</div>
-                    <div type="button" class="save-button-bar" data-dismiss="modal">Save changes</div>
                   </div>
                 </div>
-              </div>
-            </div>
+          </div>
           
 
 
@@ -237,7 +235,7 @@
 
                     // <!-- Musician Profile Box Section End-->
                         
-
+                  <div class="profile-page-background">
                     <div class="search-box">
                         <div class="musician-search-header">
                             <h3 class="musician-search-header-title">Search other users</h3>
@@ -271,6 +269,7 @@
 
                     </div>
 
+                  </div>
                 </div>
            
 

@@ -101,7 +101,7 @@ var CreateAccountView = Parse.View.extend({
 
         musician.signUp(null, {
             success: function(musician) {
-
+                // window.location.href = '/#musicianprofile'
                 new YourMusicianProfileView({
                     model: musician
                 })
@@ -147,6 +147,9 @@ var CreateAccountView = Parse.View.extend({
                 $('.bar-user-name').val('');
                 $('.bar-password').val('');
                 $('.bar-verify-password').val('');
+
+                new YourBarProfileView()
+
             },
             error: function(bar, error) {
                 // Show the error message somewhere and let the bar try again.
@@ -154,6 +157,5 @@ var CreateAccountView = Parse.View.extend({
             }
         });
 
-        new YourBarProfileView()
     }
 });
