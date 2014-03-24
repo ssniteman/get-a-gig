@@ -9,9 +9,6 @@ $(function() {
 
 });
 
-
-
-
 // sending info up to parse once ACCOUNT IS CREATED
 
 // $('.save-button-musician').click(function() {

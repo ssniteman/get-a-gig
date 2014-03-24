@@ -11,7 +11,7 @@ var SetUpView = Parse.View.extend({
 
     initialize: function() {
         $('.profile-page-background').css('display', 'none')
-        $('.container-two').append(this.el)
+        $('.container-two').html(this.el)
         this.render()
     },
 
@@ -47,6 +47,7 @@ var SetUpView = Parse.View.extend({
     createAccountView: function() {
         console.log('clicked create account')
         new CreateAccountView()
+        console.log('rendered new create account view')
     }
 
 });
@@ -101,6 +102,9 @@ var CreateAccountView = Parse.View.extend({
         musician.signUp(null, {
             success: function(musician) {
 
+                new YourMusicianProfileView({
+                    model: musician
+                })
             },
             error: function(musician, error) {
                 // Show the error message somewhere and let the user try again.
@@ -108,7 +112,6 @@ var CreateAccountView = Parse.View.extend({
             }
         });
 
-        new YourMusicianProfileView()
 
         console.log('firing your musician profile')
     },
