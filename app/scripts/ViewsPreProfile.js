@@ -4,14 +4,15 @@ var SetUpView = Parse.View.extend({
 
     renderedTemplate: _.template($('#setupview-template').text()),
 
+    className: 'account-page',
+
     events: {
         "click .sign-in-btn": "login",
         "click .create-account-btn": "createAccountView"
     },
 
     initialize: function() {
-        $('.profile-page-background').css('display', 'none')
-        $('.container-two').html(this.el)
+        $('body').html(this.el)
         this.render()
     },
 
@@ -66,7 +67,9 @@ var CreateAccountView = Parse.View.extend({
     },
 
     initialize: function() {
-        $('.profile-page-background').css('display', 'none')
+        // $('.profile-page-background').css('display', 'none')
+        $('.sign-in').html('');
+        $('.create-account').html('');
         $('.container-two').html(this.el)
         this.render()
     },

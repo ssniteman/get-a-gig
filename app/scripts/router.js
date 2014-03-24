@@ -34,11 +34,8 @@ var MainRouter = Backbone.Router.extend({
     },
 
     musicianProfile: function() {
-        // $('.background-image-one').remove();
-        $('.container').html('');
-        $('.container-two').html('');
-
-        new YourMusicianProfileView(this.model)
+        // $('.background-image-one').remove();    
+        new YourMusicianProfileView()
 
     },
 

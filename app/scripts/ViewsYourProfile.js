@@ -6,7 +6,7 @@ var YourMusicianProfileView = Parse.View.extend({
 
     initialize: function() {
         console.log('musician profile initializing')
-        $('.profile-page-background').html(this.el)
+        $('body').html(this.el)
         this.render()
         console.log('musician profile rendering')
     },
