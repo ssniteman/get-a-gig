@@ -298,6 +298,7 @@ body {
 }
 
 .modal-header {
+    border-radius: 7px 7px 0px 0px;
     background-color: rgb(51, 51, 51);
     border: none;
     height: 80px;
@@ -336,21 +337,6 @@ body {
     margin-bottom: 0;
 }
 
-.cancel-button {
-    display: inline-block;
-    width: 121px;
-    height: 38px;
-    color: white;
-    border: none;
-    border-radius: 2px;
-    background-color: #dd473d;
-    line-height: 32px;
-    text-align: center;
-    padding-top: 3px;
-    margin: 0 auto;
-    margin: 10px 10px 10px 10px;
-}
-
 .save-button-musician {
     display: inline-block;
     width: 404px;
@@ -364,21 +350,31 @@ body {
     padding-top: 14px;
     margin: 0 auto;
     margin: 10px 28px 12px 10px;
+
+    &:hover {
+
+        background-color: rgb(168,48,39);
+    }
 }
 
 .save-button-bar {
     display: inline-block;
-    width: 121px;
-    height: 38px;
+    width: 404px;
+    height: 60px;
     color: white;
     border: none;
     border-radius: 2px;
     background-color: #dd473d;
     line-height: 32px;
     text-align: center;
-    padding-top: 3px;
+    padding-top: 14px;
     margin: 0 auto;
-    margin: 10px 10px 10px 110px;
+    margin: 10px 28px 12px 10px;
+
+    &:hover {
+
+        background-color: rgb(168,48,39);
+    }
 }
 
 
