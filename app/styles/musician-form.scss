@@ -1,0 +1,545 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*musician profile view start*/
+
+.musician-page-container {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.profile-page-background {
+    z-index: -1000;
+    position: absolute;
+    background-color: silver;
+    width: 100%;
+    height: 100%;
+}
+
+.main-header {
+    z-index: 100;
+    position: fixed;
+    background-color: rgb(51, 51, 51);
+    width: 100%;
+    height: 60px;
+}
+
+.header-logo-div {
+    padding-top: 5px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+
+    .header-logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.profile-button {
+    font-weight: 100;
+    letter-spacing: 2px;
+    display: inline-block;
+    width: 121px;
+    height: 60px;
+    color: white;
+    border: none;
+    background-color: rgb(51, 51, 51);
+    line-height: 50px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, .1);
+        border-bottom: 4px solid #dd473d;
+    }
+}
+
+.musician-profile-box {
+    display: inline-block;
+    background-color: #dd473d;
+    width: 630px;
+    height: 280px;
+    vertical-align: top;
+    margin-top: 100px;
+    float: left;
+}
+
+.musician-profile-image-div {
+    display: inline-block;
+    margin: 35px 20px 30px 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+
+    .musician-avatar {
+        width: 150px;
+        height: auto;
+    }
+}
+
+.musician-profile-main-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 80px;
+
+    h3 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: inline-block;
+        line-height: 13px;
+        font-size: 24px;
+        letter-spacing: 1px;
+        color: snow;
+    }
+
+    h4 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: snow;
+    }
+
+    p {
+        letter-spacing: 1px;
+        display: inline-block;
+        line-height: 5px;
+        font-weight: 300;
+        color: snow;
+    }
+}
+
+.musician-edit-button {
+    width: 121px;
+    height: 60px;
+    display: inline-block;
+    float: right;
+
+    .edit-button {
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+        width: 121px;
+        height: 60px;
+        color: #dd473d;
+        border: none;
+        background-color: snow;
+        line-height: 50px;
+        text-align: center;
+        padding-top: 3px;
+        margin: 0 auto;
+
+        &:hover {
+            background-color: snow;
+            opacity: .5;
+        }
+    }
+}
+
+
+.profile-divide {
+    width: 100%;
+    background-color: snow;
+}
+
+.musician-profile-secondary-info {
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: snow;
+
+    .nightly-rate {
+        background-color: snow;
+        display: inline-block;
+        height: 60px;
+        width: 160px;
+        border-right: 1px solid silver;
+
+        .rate-title {
+            font-size: 17px;
+            display: inline-block;
+            font-weight: 200;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            color: silver;
+        }
+    }
+
+    .nightly-rate-price {
+        background-color: snow;
+        display: inline-block;
+        height: 60px;
+        width: 150px;
+        border-right: 1px solid silver;
+
+        .price {
+            font-size: 17px;
+            display: inline-block;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            color: #dd473d;
+            opacity: .8;
+        }
+    }
+
+    .availability-title {
+        background-color: snow;
+        display: inline-block;
+        height: 60px;
+        width: 160px;
+        border-right: 1px solid silver;
+
+        .available-copy  {
+            font-size: 17px;
+            display: inline-block;
+            font-weight: 200;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            color: silver;
+        }
+
+    }
+
+    .availability {
+        background-color: snow;
+        display: inline-block;
+        height: 60px;
+        width: 140px;
+
+        .available-calender {
+            font-size: 16px;
+            display: inline-block;
+            font-weight: 500;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            color: #dd473d;
+            opacity: .8;
+        }
+    }
+}
+/*musician profile view end*/
+
+
+
+/*search view start*/
+.search-box {
+    display: inline-block;
+    background-color: snow;
+    width: 320px;
+    height: 500px;
+    vertical-align: top;
+    float: right;
+    margin-top: 100px;
+}
+
+.musician-search-header {
+    width: 320px;
+    height: 60px;
+    background-color: #dd473d;
+
+    .musician-search-header-title {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: snow;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 1px;
+    }
+}
+
+.musician-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-main-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.location-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-location-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.location-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.genre-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-genre-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.genre-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.availability-search-btn {
+    width: 100%;
+    height: 60px;
+    color: silver;
+    border-bottom: 1px solid silver;
+    background-color: snow;
+    text-align: center;
+    margin: 0 auto;
+
+
+    .choose-availability-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.availability-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    &:hover {
+        color: rgb(51, 51, 51);
+        font-weight: 300;
+        background-color: rgba(192, 192, 192, .3);
+    }
+}
+
+.section-search-btn {
+    width: 200px;
+    height: 45px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 110px;
+
+    &:hover {
+        background-color: rgb(168,48,39);
+    }
+}
+
+
+
+
+/*search view end*/
+
+
+.showcase-box {
+    background-color: snow;
+    width: 630px;
+    height: 720px;
+    vertical-align: top;
+    margin-top: 10px;
+    float: left;
+}
+
+.messages-box {
+    display: inline-block;
+    background-color: snow;
+    width: 320px;
+    height: 500px;
+    vertical-align: top;
+    float: right;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
