@@ -538,6 +538,60 @@ body {
 }
 
 
+.form-group-one {
+    margin-top: 100px;
+}
+
+.label {
+    color: #333333;
+    font-size: 18px;
+}
+
+.form-control {
+    margin-top: 20px;
+}
+
+.form-group-two {
+    margin-top: 20px;
+}
+
+.save-form {
+    margin-top: 20px;
+    background-color: #dd473d;
+    border: none;
+
+    &:hover {
+    background-color: rgb(168,48,39);
+    }
+}
+
+.select2-container.e1 {
+    width: 960px;
+    margin-top: 20px;
+}
+
+.select2-container.e23 {
+    width: 960px;
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.select2-container.e24 {
+    width: 960px;
+    margin-top: 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+/*.select2-choice {
+    height: 45px;
+}*/
+
+/*.select2-choices {
+    height: 45px;
+    line-height: 45px;
+}
+*/
 
 
 

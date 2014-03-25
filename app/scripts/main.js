@@ -2,12 +2,34 @@
 
 $(function() {
 
+    (function() {
+        $(".e1").select2();
+        console.log('it worked')
+    }());
+
+
+    $(".e23").select2({
+        tags: ["folk", "country", "blues"],
+        maximumInputLength: 0
+    });
+
+    $(".e24").select2({
+        tags: ["weekdays", "weekends", ],
+        maximumInputLength: 0
+    });
+
+
+
     Parse.initialize("3iYwTMywkleelnVUpiZdaXPPqVpvDsxw5qsJ1pev", "xLRITPtlktBrAiar3Xfk83Rs1isM23IbUHdXbr82");
 
     window.router = new MainRouter();
     Backbone.history.start();
-
 });
+
+// $(document).ready(function() {
+//     $("#e1").select2();
+
+
 
 // sending info up to parse once ACCOUNT IS CREATED
 
