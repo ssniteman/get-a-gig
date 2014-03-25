@@ -645,6 +645,43 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*musician search view start*/
 .search-box {
     display: inline-block;
@@ -833,10 +870,27 @@ body {
 /*search view end*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .showcase-box {
     background-color: snow;
     width: 630px;
-    height: 720px;
+    height: 820px;
     vertical-align: top;
     margin-top: 10px;
     float: left;
@@ -880,10 +934,27 @@ body {
     display: inline-block;
     background-color: snow;
     width: 320px;
-    height: 500px;
+    height: 600px;
     vertical-align: top;
     float: right;
     margin-top: 10px;
+}
+
+.musician-message-header {
+    width: 320px;
+    height: 60px;
+    background-color: #dd473d;
+
+    .musician-message-header-title {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: snow;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 1px;
+    }
 }
 
 
@@ -898,19 +969,77 @@ body {
     text-align: center;
     padding-top: 3px;
     margin: 0 auto;
-    margin-top: 110px;
+    margin-top: 48px;
 
     &:hover {
         background-color: rgb(168,48,39);
     }
 }
 
+// new message area
+
 .musician-message-list {
-    background-color: gray;
-    height: 400px;
-    width: 300px;
+    border-top: 4px solid rgb(221, 71, 61);
+    border-left: 1px solid rgba(192, 192, 192, .1);
+    border-right: 1px solid rgba(192, 192, 192, .1);
+    border-bottom: 1px solid rgba(192, 192, 192, .1);
+    margin-left: 23px;
+    margin-top: 21px;
+    height: 380px;
+    width: 275px;
     overflow: scroll;
+
+    .new-message {
+        width: 100%;
+        height: 80px;
+        color: silver;
+        border-bottom: 1px solid silver;
+        background-color: rgba(192, 192, 192, .2);
+        text-align: center;
+        margin: 0 auto;
+
+        .musician-message-image-div {
+            left: 0px;
+            display: inline-block;
+            margin: 10px 10px 0px -48px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+            border: 2px solid rgb(51, 51, 51);
+
+            .musician-message-avatar {
+                width: 60px;
+                height: auto;
+            }
+        }
+
+
+        .new-message-copy {
+            vertical-align: top;
+            margin-top: 18px;
+            margin-left: 0px;
+            line-height: 0px;
+            font-size: 17px;
+            display: inline-block;
+            font-weight: 200;
+            letter-spacing: 2px;
+        }
+
+        .glyphicon-chevron-right.new-message-chevron {
+            float: right;
+            line-height: 60px;
+            margin-right: 15px;
+            position: relative;
+        }
+
+        &:hover {
+            background-color: rgba(221, 71, 61, .5);
+        }
+    }
 }
+
+
 
 
 
