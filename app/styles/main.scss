@@ -231,6 +231,20 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*create account page view*/
 
 
@@ -384,6 +398,27 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*musician profile view start*/
 
 .musician-page-container {
@@ -396,7 +431,7 @@ body {
     position: absolute;
     background-color: silver;
     width: 100%;
-    height: 100%;
+    height: 224%;
 }
 
 .main-header {
@@ -610,7 +645,7 @@ body {
 
 
 
-/*search view start*/
+/*musician search view start*/
 .search-box {
     display: inline-block;
     background-color: snow;
@@ -807,7 +842,41 @@ body {
     float: left;
 }
 
-.messages-box {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*musician message view start*/
+
+
+
+.messages-preview-box {
     display: inline-block;
     background-color: snow;
     width: 320px;
@@ -818,6 +887,30 @@ body {
 }
 
 
+.message-preview-btn {
+    width: 200px;
+    height: 45px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 110px;
+
+    &:hover {
+        background-color: rgb(168,48,39);
+    }
+}
+
+.musician-message-list {
+    background-color: gray;
+    height: 400px;
+    width: 300px;
+    overflow: scroll;
+}
 
 
 
