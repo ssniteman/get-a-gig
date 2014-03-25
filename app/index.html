@@ -389,6 +389,54 @@
 
         <!-- END OF MUSICIAN PROFILE VIEW -->
 
+        <!-- MUSICIAN FORM VIEW -->
+
+        <script type="text/template" id="muscian-form-template">
+
+        <div class="profile-page-background">
+
+                <div class="main-header">
+                    <div class="musician-page-container">
+                        <div class="navigation-buttons">
+                            <div type="button" class="profile-button pull-right" data-dismiss="modal">Profile</div>
+                            <div type="button" class="profile-button pull-right" data-dismiss="modal">Messages</div>
+                            <div type="button" class="profile-button pull-right" data-dismiss="modal">Search</div>
+                        </div>
+                        <div class="header-logo-div">
+                            <img src="images/header-logo.png" class="header-logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="musician-page-container">
+                    <form role="form">
+                        <div class="form-group-one">
+                          <label for="form-label" class="label">Profile</label>
+                            <input class="form-control input-lg musician-name" type="text" placeholder="Name or Band Name">
+                            <input class="form-control input-lg musician-email" type="text" placeholder="Email"> 
+                            <input class="form-control input-lg musician-city" type="text" placeholder="City">
+                            <select class="e1 musician-state" data-placeholder="State">
+                                <option></option>
+                                <option value="SC">South Carolina</option>
+                                <option value="WY">Wyoming</option>
+                            </select>
+                            <input class="e23 musician-genre" placeholder="Genre">
+                            <input class="form-control input-lg musician-nightly-rate" type="text" placeholder="Nightly Rate">
+                            <input class="e24" placeholder="Availability">
+                        </div>
+                        <div class="form-group-two">
+                          <label for="form-label" class="label">Showcase</label>
+                            <input class="form-control input-lg musician-nightly-rate" type="text" placeholder="Photos">
+                            <input class="form-control input-lg musician-nightly-availability" type="text" placeholder="Videos"> 
+                            <input class="form-control input-lg musician-nightly-availability" type="text" placeholder="Sound Clips"> 
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg btn-block save-form">Save</button>
+                    </form>
+                </div>
+        </div>
+
+
+        </script>
 
 
 
