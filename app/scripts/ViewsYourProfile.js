@@ -5,8 +5,8 @@ var YourMusicianProfileView = Parse.View.extend({
     renderedTemplate: _.template($('#your-musician-profile-template').text()),
 
     events: {
-        "click .edit-button": "musicianForm";
-    }
+        "click .edit-button": "musicianForm"
+    },
 
     initialize: function() {
         console.log('musician profile initializing')
