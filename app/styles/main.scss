@@ -914,7 +914,7 @@ body {
 
 
 .showcase-box {
-    background-color: snow;
+    background-color: #dd473d;
     width: 630px;
     height: 820px;
     vertical-align: top;
@@ -925,7 +925,7 @@ body {
 .musician-showcase-header {
     width: 100%;
     height: 60px;
-    background-color: #dd473d;
+    background-color: rgb(51, 51, 51);
 
     .musician-showcase-header-title {
         font-size: 18px;
@@ -939,7 +939,197 @@ body {
     }
 }
 
+.musician-showcase-photo-title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: snow;
+    line-height: 60px;
+    margin-top: 0px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+}
 
+.musician-photo-gallery {
+    width: 100%;
+    height: 430px;
+    background-color: snow;
+}
+
+.musician-photo-one-div {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-photo-two-div {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s;
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    } 
+}
+
+
+.musician-photo-three-div {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-photo-four-div {
+    vertical-align: top;
+    margin-top: 4px;
+    margin-left: 20px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }    
+}
+
+.musician-photo-five-div {
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-photo-six-div {
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
 
 
 
