@@ -467,6 +467,7 @@ body {
     text-align: center;
     padding-top: 3px;
     margin: 0 auto;
+    -webkit-transition: all .2s ease-in-out;
 
     &:hover {
         background-color: rgba(0, 0, 0, .1);
@@ -887,6 +888,31 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .showcase-box {
     background-color: snow;
     width: 630px;
@@ -896,8 +922,214 @@ body {
     float: left;
 }
 
+.musician-showcase-header {
+    width: 100%;
+    height: 60px;
+    background-color: #dd473d;
+
+    .musician-showcase-header-title {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: snow;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 1px;
+    }
+}
+
+.musician-showcase-photo-title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #dd473d;
+    line-height: 60px;
+    margin-top: 0px;
+    margin-left: 22px;
+    letter-spacing: 1px;
+}
+
+.musician-photo-gallery {
+    width: 100%;
+    height: 430px;
+    background-color: rgba(192, 192, 192, .3);
+}
+
+.musician-photo-one-div {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 22px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-photo-two-div {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s;
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    } 
+}
 
 
+.musician-photo-three-div {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-photo-four-div {
+    vertical-align: top;
+    margin-top: 4px;
+    margin-left: 22px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }    
+}
+
+.musician-photo-five-div {
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-photo-six-div {
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
 
 
 
@@ -995,18 +1227,16 @@ body {
         color: silver;
         border-bottom: 1px solid silver;
         background-color: rgba(192, 192, 192, .2);
-        text-align: center;
-        margin: 0 auto;
 
         .musician-message-image-div {
+            position: relative;
             left: 0px;
             display: inline-block;
-            margin: 10px 10px 0px -48px;
+            margin: 10px 5px 0px 10px;
             border-radius: 50%;
             width: 60px;
             height: 60px;
             overflow: hidden;
-            border: 2px solid rgb(51, 51, 51);
 
             .musician-message-avatar {
                 width: 60px;
@@ -1014,27 +1244,38 @@ body {
             }
         }
 
-
-        .new-message-copy {
-            vertical-align: top;
-            margin-top: 18px;
-            margin-left: 0px;
-            line-height: 0px;
-            font-size: 17px;
-            display: inline-block;
-            font-weight: 200;
-            letter-spacing: 2px;
-        }
-
-        .glyphicon-chevron-right.new-message-chevron {
-            float: right;
-            line-height: 60px;
-            margin-right: 15px;
+        .message-text-content {
+            width: 175px;
+            height: 60px;
             position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 12px;
+
+            .new-message-name {
+                margin: 0px;
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(51, 51, 51, .6);
+            }
+
+            .new-message-genre {
+                margin: 0px;
+                font-size: 12px;
+                font-weight: 500;
+                color: rgba(51, 51, 51, .6);
+            }
+
+            .new-message-text {
+                margin: 0px;
+                font-size: 11px;
+                font-weight: 200;
+                color: rgba(51, 51, 51, .6);
+            }
         }
 
         &:hover {
-            background-color: rgba(221, 71, 61, .5);
+            background-color: rgba(51, 51, 51, .1);
         }
     }
 }
