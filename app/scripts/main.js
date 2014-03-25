@@ -10,7 +10,12 @@ $(function() {
 
     $(".e23").select2({
         tags: ["folk", "country", "blues"],
-        maximumInputLength: 4
+        maximumInputLength: 0
+    });
+
+    $(".e24").select2({
+        tags: ["weekdays", "weekends", ],
+        maximumInputLength: 0
     });
 
 
