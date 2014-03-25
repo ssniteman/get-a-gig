@@ -4,6 +4,10 @@ var YourMusicianProfileView = Parse.View.extend({
 
     renderedTemplate: _.template($('#your-musician-profile-template').text()),
 
+    events: {
+        "click .edit-button": "musicianForm";
+    }
+
     initialize: function() {
         console.log('musician profile initializing')
         $('body').html(this.el)
@@ -13,5 +17,9 @@ var YourMusicianProfileView = Parse.View.extend({
 
     render: function() {
         this.$el.html(this.renderedTemplate())
+    },
+
+    musicianForm: function() {
+        new EditMusicianProfileView()
     }
 });
