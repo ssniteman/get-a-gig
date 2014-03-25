@@ -1001,7 +1001,7 @@ body {
             position: relative;
             left: 0px;
             display: inline-block;
-            margin: 10px 10px 0px 10px;
+            margin: 10px 5px 0px 10px;
             border-radius: 50%;
             width: 60px;
             height: 60px;
@@ -1013,20 +1013,38 @@ body {
             }
         }
 
-        .new-message-copy {
+        .message-text-content {
+            width: 175px;
+            height: 60px;
             position: relative;
-            vertical-align: top;
-            margin-top: 18px;
-            margin-left: 0px;
-            line-height: 0px;
-            font-size: 16px;
             display: inline-block;
-            font-weight: 200;
-            letter-spacing: 2px;
+            vertical-align: top;
+            margin-top: 12px;
+
+            .new-message-name {
+                margin: 0px;
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(51, 51, 51, .6);
+            }
+
+            .new-message-genre {
+                margin: 0px;
+                font-size: 12px;
+                font-weight: 500;
+                color: rgba(51, 51, 51, .6);
+            }
+
+            .new-message-text {
+                margin: 0px;
+                font-size: 11px;
+                font-weight: 200;
+                color: rgba(51, 51, 51, .6);
+            }
         }
 
         &:hover {
-            background-color: rgba(51, 51, 51, .5);
+            background-color: rgba(51, 51, 51, .1);
         }
     }
 }
