@@ -7,8 +7,9 @@ var SetUpView = Parse.View.extend({
     className: 'account-page',
 
     events: {
-        "click .sign-in-btn": "login",
-        "click .create-account-btn": "createAccountView"
+        "click .sign-in-btn": "signIn",
+        "click .create-account-btn": "createAccountView",
+        "click .login-btn": "login"
     },
 
     initialize: function() {
@@ -20,10 +21,13 @@ var SetUpView = Parse.View.extend({
         this.$el.html(this.renderedTemplate())
     },
 
-    login: function() {
+    signIn: function() {
         $('.sign-in-btn').addClass('active');
         $('.sign-in-drop').css('height', '145px');
         $('.create-account-btn').addClass('active');
+    },
+
+    login: function() {
 
         ///////// current users can login - goes to respective profile ///////
 
@@ -35,14 +39,13 @@ var SetUpView = Parse.View.extend({
                     new YourBarProfileView()
                 }
 
+                console.log('created musician view based on sign in')
+
             },
             error: function(user, error) {
                 // The login failed. Check error to see why.
             }
         });
-
-
-
     },
 
     createAccountView: function() {
