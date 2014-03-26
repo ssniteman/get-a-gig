@@ -43,28 +43,35 @@
                 </div>
 
                 <div class="musician-page-container">
-                    <form role="form">
+                    <form role="form" class="form-container">
+                        <div class="form-container-header"></div>
                         <div class="form-group-one">
-                          <label for="form-label" class="label">Profile</label>
-                            <input class="form-control input-lg musician-name" type="text" placeholder="Name or Band Name">
-                            <input class="form-control input-lg musician-email" type="text" placeholder="Email"> 
-                            <input class="form-control input-lg musician-city" type="text" placeholder="City">
-                            <select class="e1 musician-state" data-placeholder="State">
-                                <option></option>
+                            <div class="label-container">
+                                <label for="form-label" class="label">Profile</label>
+                            </div>
+                            <input class="musician-name" type="text" placeholder="Name or Band Name">
+                            <input class="musician-email" type="text" placeholder="Email"> 
+                            <input class="musician-city" type="text" placeholder="City">
+                            <select class="musician-state" data-placeholder="State">
+                                <option placeholder="State">Choose State</option>
+                                <option value="OR">Oregon</option>
+                                <option value="NC">North Carolina</option>
                                 <option value="SC">South Carolina</option>
                                 <option value="WY">Wyoming</option>
                             </select>
                             <input class="e23 musician-genre" placeholder="Genre">
-                            <input class="form-control input-lg musician-nightly-rate" type="text" placeholder="Nightly Rate">
+                            <input class="musician-nightly-rate" type="text" placeholder="Nightly Rate">
                             <input class="e24" placeholder="Availability">
                         </div>
                         <div class="form-group-two">
-                          <label for="form-label" class="label">Showcase</label>
-                            <input class="form-control input-lg musician-nightly-rate" type="text" placeholder="Photos">
-                            <input class="form-control input-lg musician-nightly-availability" type="text" placeholder="Videos"> 
-                            <input class="form-control input-lg musician-nightly-availability" type="text" placeholder="Sound Clips"> 
+                            <div class="label-container">
+                                <label for="form-label" class="label">Showcase</label>
+                            </div>
+                            <input class="musician-photos" type="text" placeholder="Photos">
+                            <input class="musician-videos" type="text" placeholder="Videos"> 
+                            <input class="musician-sound-clips" type="text" placeholder="Sound Clips"> 
+                            <button type="button" class="save-form">Save</button>
                         </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block save-form">Save</button>
                     </form>
 
                 </div>
