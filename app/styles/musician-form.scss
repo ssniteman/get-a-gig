@@ -595,7 +595,7 @@ body {
     padding: 40px;
 }
 
-.musician-name {
+.musician-name-form {
     color: rgb(51, 51, 51);
     font-weight: 200;
     background: white;
@@ -607,20 +607,7 @@ body {
     padding-left: 10px;
 }
 
-.musician-email {
-    color: rgb(51, 51, 51);
-    font-weight: 200;
-    background: white;
-    border-radius: 2px;
-    border: 1px solid silver;
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 0;
-    padding-left: 10px;
-}
-
-.musician-city {
+.musician-email-form {
     color: rgb(51, 51, 51);
     font-weight: 200;
     background: white;
@@ -633,7 +620,7 @@ body {
     padding-left: 10px;
 }
 
-.musician-state {
+.musician-city-form {
     color: rgb(51, 51, 51);
     font-weight: 200;
     background: white;
@@ -646,7 +633,7 @@ body {
     padding-left: 10px;
 }
 
-.musician-nightly-rate {
+.musician-state-form {
     color: rgb(51, 51, 51);
     font-weight: 200;
     background: white;
@@ -659,7 +646,20 @@ body {
     padding-left: 10px;
 }
 
-.musician-photos {
+.musician-nightly-rate-form {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-photos-form {
     color: rgb(51, 51, 51);
     font-weight: 200;
     background: white;
@@ -672,7 +672,7 @@ body {
     padding-left: 10px;
 }
 
-.musician-videos {
+.musician-videos-form {
     color: rgb(51, 51, 51);
     font-weight: 200;
     background: white;
@@ -685,7 +685,7 @@ body {
     padding-left: 10px;
 }
 
-.musician-sound-clips {
+.musician-sound-clips-form {
     color: rgb(51, 51, 51);
     font-weight: 200;
     background: white;
@@ -720,7 +720,7 @@ body {
     padding: 40px;
 }
 
-.save-form {
+.save-musician-form {
     display: inline-block;
     width: 100%;
     height: 60px;
