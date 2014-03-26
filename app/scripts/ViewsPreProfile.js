@@ -87,8 +87,6 @@ var CreateAccountView = Parse.View.extend({
 
         // capturing values that were inputed by musicians
 
-        var name = $('.musician-name').val();
-        var email = $('.musician-email').val();
         var username = $('.musician-username').val();
         var password = $('.musician-password').val();
         var verifyPassword = $('.musician-verify-password').val();
@@ -96,8 +94,6 @@ var CreateAccountView = Parse.View.extend({
 
         // setting inputs into Parse as objects
 
-        musician.set('name', $('.musician-name').val());
-        musician.set('email', $('.musician-email').val());
         musician.set('username', $('.musician-username').val());
         musician.set('password', $('.musician-password').val());
         musician.set('verifyPassword', $('.musician-verify-password').val());
