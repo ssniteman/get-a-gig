@@ -46,12 +46,16 @@
                     <form role="form" class="form-container">
                         <div class="form-container-header"></div>
                         <div class="form-group-one">
-                          <label for="form-label" class="label">Profile</label>
+                            <div class="label-container">
+                                <label for="form-label" class="label">Profile</label>
+                            </div>
                             <input class="musician-name" type="text" placeholder="Name or Band Name">
                             <input class="musician-email" type="text" placeholder="Email"> 
                             <input class="musician-city" type="text" placeholder="City">
                             <select class="musician-state" data-placeholder="State">
-                                <option></option>
+                                <option placeholder="State">Choose State</option>
+                                <option value="OR">Oregon</option>
+                                <option value="NC">North Carolina</option>
                                 <option value="SC">South Carolina</option>
                                 <option value="WY">Wyoming</option>
                             </select>
@@ -60,7 +64,9 @@
                             <input class="e24" placeholder="Availability">
                         </div>
                         <div class="form-group-two">
-                          <label for="form-label" class="label">Showcase</label>
+                            <div class="label-container">
+                                <label for="form-label" class="label">Showcase</label>
+                            </div>
                             <input class="musician-photos" type="text" placeholder="Photos">
                             <input class="musician-videos" type="text" placeholder="Videos"> 
                             <input class="musician-sound-clips" type="text" placeholder="Sound Clips"> 
