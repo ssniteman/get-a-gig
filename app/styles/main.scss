@@ -231,6 +231,20 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*create account page view*/
 
 
@@ -384,6 +398,27 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*musician profile view start*/
 
 .musician-page-container {
@@ -396,7 +431,7 @@ body {
     position: absolute;
     background-color: silver;
     width: 100%;
-    height: 100%;
+    height: 224%;
 }
 
 .main-header {
@@ -432,6 +467,7 @@ body {
     text-align: center;
     padding-top: 3px;
     margin: 0 auto;
+    -webkit-transition: all .2s ease-in-out;
 
     &:hover {
         background-color: rgba(0, 0, 0, .1);
@@ -610,7 +646,44 @@ body {
 
 
 
-/*search view start*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*musician search view start*/
 .search-box {
     display: inline-block;
     background-color: snow;
@@ -798,23 +871,424 @@ body {
 /*search view end*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .showcase-box {
     background-color: snow;
     width: 630px;
-    height: 720px;
+    height: 820px;
     vertical-align: top;
     margin-top: 10px;
     float: left;
 }
 
-.messages-box {
+.musician-showcase-header {
+    width: 100%;
+    height: 60px;
+    background-color: #dd473d;
+
+    .musician-showcase-header-title {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: snow;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 1px;
+    }
+}
+
+.musician-showcase-photo-title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #dd473d;
+    line-height: 60px;
+    margin-top: 0px;
+    margin-left: 22px;
+    letter-spacing: 1px;
+}
+
+.musician-photo-gallery {
+    width: 100%;
+    height: 430px;
+    background-color: rgba(192, 192, 192, .3);
+}
+
+.musician-photo-one-div {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-left: 22px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-photo-two-div {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s;
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    } 
+}
+
+
+.musician-photo-three-div {
+    vertical-align: top;
+    margin-top: 20px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-photo-four-div {
+    vertical-align: top;
+    margin-top: 4px;
+    margin-left: 22px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }    
+}
+
+.musician-photo-five-div {
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-photo-six-div {
+    vertical-align: top;
+    margin-top: 4px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    position: relative;
+    display: inline-block;
+    background-color: snow;
+    width: 190px;
+    height: 190px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 7px -3px silver;
+    color: rgb(46, 49, 51);
+    transition-duration: .6s; 
+
+    .musician-photo-crop {
+        position: relative;
+        display: inline-block;
+        width: 190px;
+        height: 190px;
+        overflow: hidden;
+
+        .musician-photo-size {
+            width: 290px;
+            height: auto;
+        }
+    }
+}
+
+.musician-showcase-videos-title {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #dd473d;
+    line-height: 60px;
+    margin-top: 20px;
+    margin-left: 22px;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*musician message view start*/
+
+
+
+.messages-preview-box {
     display: inline-block;
     background-color: snow;
     width: 320px;
-    height: 500px;
+    height: 600px;
     vertical-align: top;
     float: right;
     margin-top: 10px;
+}
+
+.musician-message-header {
+    width: 320px;
+    height: 60px;
+    background-color: #dd473d;
+
+    .musician-message-header-title {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        color: snow;
+        line-height: 60px;
+        text-align: center;
+        margin-top: 0px;
+        letter-spacing: 1px;
+    }
+}
+
+
+.message-preview-btn {
+    width: 200px;
+    height: 45px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(221, 71, 61);
+    line-height: 43px;
+    text-align: center;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-top: 48px;
+
+    &:hover {
+        background-color: rgb(168,48,39);
+    }
+}
+
+// new message area
+
+.musician-message-list {
+    border-top: 4px solid rgb(221, 71, 61);
+    border-left: 1px solid rgba(192, 192, 192, .1);
+    border-right: 1px solid rgba(192, 192, 192, .1);
+    border-bottom: 1px solid rgba(192, 192, 192, .1);
+    margin-left: 23px;
+    margin-top: 21px;
+    height: 380px;
+    width: 275px;
+    overflow: scroll;
+
+    .new-message {
+        width: 100%;
+        height: 80px;
+        color: silver;
+        border-bottom: 1px solid silver;
+        background-color: rgba(192, 192, 192, .2);
+
+        .musician-message-image-div {
+            position: relative;
+            left: 0px;
+            display: inline-block;
+            margin: 10px 5px 0px 10px;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            overflow: hidden;
+
+            .musician-message-avatar {
+                width: 60px;
+                height: auto;
+            }
+        }
+
+        .message-text-content {
+            width: 175px;
+            height: 60px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 12px;
+
+            .new-message-name {
+                margin: 0px;
+                font-size: 14px;
+                font-weight: 500;
+                color: rgba(51, 51, 51, .6);
+            }
+
+            .new-message-genre {
+                margin: 0px;
+                font-size: 12px;
+                font-weight: 500;
+                color: rgba(51, 51, 51, .6);
+            }
+
+            .new-message-text {
+                margin: 0px;
+                font-size: 11px;
+                font-weight: 200;
+                color: rgba(51, 51, 51, .6);
+            }
+        }
+
+        &:hover {
+            background-color: rgba(51, 51, 51, .1);
+        }
+    }
 }
 
 
