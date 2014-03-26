@@ -116,7 +116,7 @@ body {
     position: absolute;
     background-color: silver;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .main-header {
@@ -538,8 +538,112 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-container {
+    position: relative;
+    width: 750px;
+    margin: 150px auto;
+    height: auto;
+    background-color: white;
+}
+
+.form-container-header {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(221, 71, 61); 
+}
+
+
 .form-group-one {
-    margin-top: 100px;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.musician-name {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-email {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-city {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-state {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
 }
 
 .label {
@@ -553,17 +657,63 @@ body {
 
 .form-group-two {
     margin-top: 20px;
+    padding: 40px;
 }
 
 .save-form {
-    margin-top: 20px;
-    background-color: #dd473d;
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    color: white;
     border: none;
+    border-radius: 2px;
+    background-color: #dd473d;
+    line-height: 32px;
+    text-align: center;
+    margin: 20px auto;
 
     &:hover {
-    background-color: rgb(168,48,39);
+        background-color: rgb(168,48,39);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -576,18 +726,18 @@ body {
 
 
 .select2-container.e1 {
-    width: 960px;
-    margin-top: 20px;
+    width: 100%;
+    padding-top: 20px;
 }
 
 .select2-container.e23 {
-    width: 960px;
-    margin-top: 20px;
+    width: 100%;
+    padding-top: 20px;
     line-height: 35px;
 }
 
 .select2-container.e24 {
-    width: 960px;
+    width: 100%;
     margin-top: 20px;
     height: 35px;
     line-height: 35px;
@@ -605,5 +755,148 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .modal-dialog {
+//     border-radius: 1px;
+//     width: 490px;
+//     padding-top: 150px;
+//     padding-bottom: 30px;
+// }
+
+// .modal-content {
+//     width: 500px;
+//     position: relative;
+//     background-color: snow;
+//     border-radius: 10px;
+//     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+//     background-clip: padding-box;
+//     outline: none;
+// }
+
+// .modal-header {
+//     border-radius: 7px 7px 0px 0px;
+//     background-color: rgb(51, 51, 51);
+//     border: none;
+//     height: 80px;
+
+//     .modal-title {
+//         color: silver;
+//         line-height: 50px;
+//         text-align: center;
+//         font-size: 16px;
+//         font-weight: 200;
+//     }
+// }
+
+// .modal-footer {
+//     border: none;
+//     margin-top: -19px;
+//     padding: 0px 20px 30px;
+//     text-align: right;
+// }
+
+// .input-group {
+//     height: 50px;
+//     width: 445px;
+//     padding: 10px;
+//     padding: 10px 15px 10px 27px;
+// }
+
+// .input-group .form-control {
+//     color: silver;
+//     font-weight: 200;
+//     background: snow;
+//     border-radius: 2px;
+//     border: 1px solid silver;
+//     height: 50px;
+//     width: 100%;
+//     margin-bottom: 0;
+// }
+
+// .cancel-button {
+//     display: inline-block;
+//     width: 121px;
+//     height: 38px;
+//     color: white;
+//     border: none;
+//     border-radius: 2px;
+//     background-color: #dd473d;
+//     line-height: 32px;
+//     text-align: center;
+//     padding-top: 3px;
+//     margin: 0 auto;
+//     margin: 10px 10px 10px 10px;
+// }
+
+// .save-button-musician {
+//     display: inline-block;
+//     width: 404px;
+//     height: 60px;
+//     color: white;
+//     border: none;
+//     border-radius: 2px;
+//     background-color: #dd473d;
+//     line-height: 32px;
+//     text-align: center;
+//     padding-top: 14px;
+//     margin: 0 auto;
+//     margin: 10px 28px 12px 10px;
+// }
+
+// .save-button-bar {
+//     display: inline-block;
+//     width: 404px;
+//     height: 60px;
+//     color: white;
+//     border: none;
+//     border-radius: 2px;
+//     background-color: #dd473d;
+//     line-height: 32px;
+//     text-align: center;
+//     padding-top: 14px;
+//     margin: 0 auto;
+//     margin: 10px 28px 12px 10px;
+// }
 
 
