@@ -17,7 +17,7 @@
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
-         <link rel="stylesheet" href="styles/select2.css">
+        <link rel="stylesheet" href="styles/select2.css">
         <!-- endbuild -->
         <script src="bower_components/modernizr/modernizr.js"></script>
 
@@ -131,7 +131,7 @@
         <script type="text/template" id="your-musician-profile-template">
               <div class="profile-page-background">
                 <div class="main-header">
-                    <div class="musician-page-container">
+                    <div class="musician-page-container-header">
                         <div class="navigation-buttons">
                             <div type="button" class="profile-button pull-right" data-dismiss="modal">Profile</div>
                             <div type="button" class="profile-button pull-right" data-dismiss="modal">Messages</div>
@@ -164,7 +164,7 @@
                             </div>
                         </div>
                         <div class="musician-edit-button">
-                            <div type="button" class="edit-button pull-right" data-dismiss="modal">Edit</div>
+                            <a href="#editmusicianprofile"><div type="button" class="edit-button pull-right" data-dismiss="modal">Edit</div></a>
                         </div>
                         <div class="musician-profile-secondary-info">
                             <div class="nightly-rate">
@@ -392,51 +392,6 @@
 
         <!-- MUSICIAN FORM VIEW -->
 
-        <script type="text/template" id="muscian-form-template">
-
-        <div class="profile-page-background">
-
-                <div class="main-header">
-                    <div class="musician-page-container">
-                        <div class="navigation-buttons">
-                            <div type="button" class="profile-button pull-right" data-dismiss="modal">Profile</div>
-                            <div type="button" class="profile-button pull-right" data-dismiss="modal">Messages</div>
-                            <div type="button" class="profile-button pull-right" data-dismiss="modal">Search</div>
-                        </div>
-                        <div class="header-logo-div">
-                            <img src="images/header-logo.png" class="header-logo">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="musician-page-container">
-                    <form role="form">
-                        <div class="form-group-one">
-                          <label for="form-label" class="label">Profile</label>
-                            <input class="form-control input-lg musician-name" type="text" placeholder="Name or Band Name">
-                            <input class="form-control input-lg musician-email" type="text" placeholder="Email"> 
-                            <input class="form-control input-lg musician-city" type="text" placeholder="City">
-                            <select class="e1 musician-state" data-placeholder="State">
-                                <option></option>
-                                <option value="SC">South Carolina</option>
-                                <option value="WY">Wyoming</option>
-                            </select>
-                            <input class="e23 musician-genre" placeholder="Genre">
-                            <input class="form-control input-lg musician-nightly-rate" type="text" placeholder="Nightly Rate">
-                            <input class="e24" placeholder="Availability">
-                        </div>
-                        <div class="form-group-two">
-                          <label for="form-label" class="label">Showcase</label>
-                            <input class="form-control input-lg musician-nightly-rate" type="text" placeholder="Photos">
-                            <input class="form-control input-lg musician-nightly-availability" type="text" placeholder="Videos"> 
-                            <input class="form-control input-lg musician-nightly-availability" type="text" placeholder="Sound Clips"> 
-                        </div>
-                        <button type="button" class="btn btn-primary btn-lg btn-block save-form">Save</button>
-                    </form>
-                </div>
-        </div>
-
-        </script>
 
         <script type="text/template" id="musician-form-template">
         
@@ -450,7 +405,7 @@
                         <input class="musician-name-form" type="text" placeholder="Name or Band Name">
                         <input class="musician-email-form" type="text" placeholder="Email"> 
                         <input class="musician-city-form" type="text" placeholder="City">
-                        <select class="musician-state-form" data-placeholder="State">
+                        <select class="e1 musician-state-form" data-placeholder="State">
                             <option placeholder="State">Choose State</option>
                             <option value="OR">Oregon</option>
                             <option value="NC">North Carolina</option>
@@ -519,6 +474,7 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/router.js"></script>
+        <script src="scripts/ViewsEditProfile.js"></script>
         <script src="scripts/ViewsPreProfile.js"></script>
         <script src="scripts/ViewsYourProfile.js"></script>
         <script src="scripts/select2.js"></script>

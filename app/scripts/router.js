@@ -41,7 +41,8 @@ var MainRouter = Backbone.Router.extend({
     },
 
     musicianProfileForm: function() {
-        new EditMusicianProfileView()
+        console.log('edit router')
+        // new EditMusicianProfileView()
     }
 
 })
