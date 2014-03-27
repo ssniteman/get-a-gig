@@ -9,7 +9,7 @@ var EditMusicianProfileView = Parse.View.extend({
     }
 
     initialize: function() {
-        $('body').html(this.el)
+        $('musician-page-container').html(this.el)
         this.render()
 
         // put jquery select2 in here???
