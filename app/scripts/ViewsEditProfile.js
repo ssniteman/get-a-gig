@@ -5,7 +5,7 @@ var EditMusicianProfileView = Parse.View.extend({
     renderedTemplate: _.template($('#musician-form-template').text()),
 
     events: {
-        "click .save-musician-form": "editProfile"
+        "click .save-musician-form": "saveProfile"
     },
 
     initialize: function() {
@@ -20,7 +20,7 @@ var EditMusicianProfileView = Parse.View.extend({
         this.$el.html(this.renderedTemplate())
     },
 
-    editProfile: function() {
+    saveProfile: function() {
 
         console.log('form pre push to parse')
 
