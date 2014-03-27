@@ -421,10 +421,16 @@ body {
 
 /*musician profile view start*/
 
+.musician-page-container-header {
+    margin: 0 auto;
+    width: 960px;
+}
+
 .musician-page-container {
     margin: 0 auto;
     width: 960px;
 }
+
 
 .profile-page-background {
     z-index: -1000;
@@ -1290,6 +1296,280 @@ body {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-container {
+    position: relative;
+    width: 750px;
+    margin: 150px auto;
+    height: auto;
+    background-color: white;
+}
+
+.form-container-header {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(221, 71, 61); 
+}
+
+
+.form-group-one {
+    margin-top: 0px;
+    padding: 40px;
+}
+
+.musician-name-form {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-email-form {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-city-form {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-state-form {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-nightly-rate-form {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-photos-form {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-videos-form {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.musician-sound-clips-form {
+    color: rgb(51, 51, 51);
+    font-weight: 200;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid silver;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+
+.label-container {
+    padding-bottom: 20px;
+
+    .label {
+        letter-spacing: 1px;
+        padding-left: 0px;
+        color: rgb(51, 51, 51);
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+
+.form-control {
+    margin-top: 20px;
+}
+
+.form-group-two {
+    margin-top: 20px;
+    padding: 40px;
+}
+
+.save-musician-form {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    background-color: #dd473d;
+    line-height: 32px;
+    text-align: center;
+    margin: 20px auto;
+
+    &:hover {
+        background-color: rgb(168,48,39);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Select forms css*/
+
+
+
+
+
+
+
+.select2-container.e1 {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.select2-container.e23 {
+    width: 100%;
+    padding-top: 20px;
+    line-height: 35px;
+}
+
+.select2-container.e24 {
+    width: 100%;
+    margin-top: 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+/*.select2-choice {
+    height: 45px;
+}*/
+
+/*.select2-choices {
+    height: 45px;
+    line-height: 45px;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

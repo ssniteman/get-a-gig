@@ -2,14 +2,15 @@
 
 var EditMusicianProfileView = Parse.View.extend({
 
-    renderedTemplate: _.template($('#musician-form-template').text());
+    renderedTemplate: _.template($('#musician-form-template').text()),
 
     events: {
-        "click .save-musician-form": "editProfile"
-    }
+        "click .save-musician-form": "saveProfile"
+    },
 
     initialize: function() {
-        $('body').html(this.el)
+        console.log('form initializing')
+        $('.musician-page-container').html(this.el)
         this.render()
 
         // put jquery select2 in here???
@@ -19,7 +20,9 @@ var EditMusicianProfileView = Parse.View.extend({
         this.$el.html(this.renderedTemplate())
     },
 
-    editProfile: function() {
+    saveProfile: function() {
+
+        console.log('form pre push to parse')
 
         // capturing values that were inputed by musicians
 
@@ -39,9 +42,10 @@ var EditMusicianProfileView = Parse.View.extend({
         musician.set('genre', $('.musician-genre-form').val());
         musician.set('nightlyrate', $('.musician-nightly-rate-form').val());
         musician.set('availability', $('.musician-availability-form').val());
-        musician.set('userType', "musician");
+        // musician.set('userType', "musician");
 
-        console.log('pushing to parse')
+
+        console.log('FORM is pushing to parse')
 
         musician.signUp(null, {
             success: function(musician) {

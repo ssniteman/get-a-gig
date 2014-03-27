@@ -3,7 +3,8 @@ var MainRouter = Backbone.Router.extend({
     routes: {
         "": "homePage",
         "createaccount": "createAccount",
-        "musicianprofile": "musicianProfile"
+        "musicianprofile": "musicianProfile",
+        "editmusicianprofile": "musicianProfileForm"
     },
 
     initialize: function() {
@@ -40,7 +41,8 @@ var MainRouter = Backbone.Router.extend({
     },
 
     musicianProfileForm: function() {
-
+        console.log('edit router')
+        // new EditMusicianProfileView()
     }
 
 })
