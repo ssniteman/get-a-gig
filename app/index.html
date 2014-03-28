@@ -521,7 +521,7 @@
                         <input class="musician-photos-form" type="text" placeholder="Photos">
                         <input class="musician-videos-form" type="text" placeholder="Videos"> 
                         <input class="musician-sound-clips-form" type="text" placeholder="Sound Clips"> 
-                        <button type="button" class="save-musician-form">Save</button>
+                        <a href="#musicianprofile/"><button type="button" class="save-musician-form">Save</button></a>
                     </div>
                 </form>
             </div>
@@ -596,13 +596,13 @@
                         </div>
                         <div class="musician-profile-main-info">
                             <div class="name">
-                                <h3 placeholder="Name">Name</h3>
+                                <h3 placeholder="Name"> <%= this.model.get('musicbandname') %> </h3>
                             </div>
                             <div class="band">
-                                <h4>Time Enough at Last | Folk</h4>
+                                <h4> <%= this.model.get('genre') %> </h4>
                             </div>
                             <div class="location">
-                                <p>Charlotte, NC</p>
+                                <p> <%= this.model.get('city') %>, <%= this.model.get('state') %> </p>
                             </div>
                         </div>
                         <div class="musician-edit-button">
@@ -613,13 +613,13 @@
                                 <h3 class="rate-title">Nightly Rate</h3>
                             </div>
                             <div class="nightly-rate-price">
-                                <h4 class="price">$125</h4>
+                                <h4 class="price">$<%= this.model.get('nightlyrate') %> </h4>
                             </div>
                             <div class="availability-title">
                                 <h3 class="available-copy">Availability</h3>
                             </div>
                             <div class="availability">
-                                <h4 class="available-calender">Fri-Sat</h4>
+                                <h4 class="available-calender"> <%= this.model.get('availability') %> </h4>
                             </div>
                         </div>
                     </div>
