@@ -13,7 +13,6 @@ var EditMusicianProfileView = Parse.View.extend({
         $('.content-container').html(this.el)
         this.render()
 
-        // put jquery select2 in here???
     },
 
     render: function() {
@@ -57,15 +56,13 @@ var EditMusicianProfileView = Parse.View.extend({
         this.model.set('genre', $('.musician-genre-form').val());
         this.model.set('nightlyRate', $('.musician-nightly-rate-form').val());
         this.model.set('availability', $('.musician-availability-form').val());
-        // musician.set('userType', "musician");
-
 
         console.log('FORM is pushing to parse')
 
         this.model.save(null, {
             success: function(musician) {
                 GG.me = musician;
-                // window.location.href = '/#musicianprofile'
+
                 router.navigate('musician/' + musician.get('username'), {
                     trigger: true
                 });
