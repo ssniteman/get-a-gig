@@ -5,7 +5,6 @@ var MainRouter = Backbone.Router.extend({
         "create-account": "createAccount",
         "musician/:username": "musicianProfile",
         "profile/edit": "musicianProfileForm",
-        // "musician-profile/": "savedMusicianProfile"
     },
 
     initialize: function() {
@@ -15,18 +14,8 @@ var MainRouter = Backbone.Router.extend({
 
     homePage: function() {
 
-        // if (Parse.User.current(musician)) {
-        //     new YourMusicianProfileView();
-        // } else {
         new SetUpView()
 
-        // },
-
-        // if (Parse.User.current(bar)) {
-        //     new YourBarProfileView();
-        // } else {
-        //     new SetUpView()
-        // }
     },
 
     createAccount: function() {
