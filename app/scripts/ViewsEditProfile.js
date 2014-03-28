@@ -65,7 +65,7 @@ var EditMusicianProfileView = Parse.View.extend({
         musician.signUp(null, {
             success: function(musician) {
                 // window.location.href = '/#musicianprofile'
-                new YourMusicianProfileView({
+                new SavedMusicianProfileView({
                     model: musician
                 })
             },
