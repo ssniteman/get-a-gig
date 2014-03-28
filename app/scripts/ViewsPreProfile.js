@@ -2,36 +2,37 @@
 
 var SetUpView = Parse.View.extend({
 
-    renderedTemplate: _.template($('#setupview-template').text()),
+        renderedTemplate: _.template($('#setupview-template').text()),
 
-    className: 'account-page',
+        className: 'account-page',
 
-    events: {
-        "click .sign-in-btn": "signIn",
-        "click .create-account-btn": "createAccountView",
-        "click .login-btn": "login"
-    },
+        events: {
+            "click .sign-in-btn": "signIn",
+            "click .create-account-btn": "createAccountView",
+            "click .login-btn": "login"
+        },
 
-    initialize: function() {
-        $('body').html(this.el)
-        this.render()
-    },
+        initialize: function() {
+            $('body').html(this.el)
+            this.render()
+        },
 
-    render: function() {
-        this.$el.html(this.renderedTemplate())
-    },
+        render: function() {
+            this.$el.html(this.renderedTemplate())
+        },
 
-    signIn: function() {
-        $('.sign-in-btn').addClass('active');
-        $('.sign-in-drop').css('height', '145px');
-        $('.create-account-btn').addClass('active');
-    },
+        signIn: function() {
+            $('.sign-in-btn').addClass('active');
+            $('.sign-in-drop').css('height', '145px');
+            $('.create-account-btn').addClass('active');
+        },
 
-    login: function() {
+        login: function() {
 
-        ///////// current users can login - goes to respective profile ///////
+            ///////// current users can login - goes to respective profile ///////
 
-        Parse.User.logIn("username", "password", {
+            Parse.User.logIn($('.musician-username').val()), $('.musician-password').val()),
+        {
             success: function(user) {
                 GG.me = user;
 
@@ -52,7 +53,7 @@ var SetUpView = Parse.View.extend({
                 // The login failed. Check error to see why.
             }
         });
-    },
+},
 
     createAccountView: function() {
         console.log('clicked create account')
@@ -60,7 +61,7 @@ var SetUpView = Parse.View.extend({
         console.log('rendered new create account view')
     }
 
-});
+    });
 
 
 /////////////////Create Account View/////////////////////////////
@@ -102,6 +103,7 @@ var CreateAccountView = Parse.View.extend({
         musician.set('username', $('.musician-username').val());
         musician.set('password', $('.musician-password').val());
         musician.set('verifyPassword', $('.musician-verify-password').val());
+
         musician.set('userType', "musician");
 
         musician.set('bandName', "Your Band Name");

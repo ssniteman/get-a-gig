@@ -40,12 +40,12 @@ var EditMusicianProfileView = Parse.View.extend({
 
         // capturing values that were inputed by musicians
 
-        var musicbandname = $('.musician-name-form').val();
-        var email = $('.musician-email-form').val();
+        var bandName = $('.musician-name-form').val();
+        // var email = $('.musician-email-form').val();
         var city = $('.musician-city-form').val();
         var state = $('.musician-state-form').val();
         var genre = $('.musician-genre-form').val();
-        var nightlyrate = $('.musician-nightly-rate-form').val();
+        var nightlyRate = $('.musician-nightly-rate-form').val();
         var availability = $('.musician-availability-form').val();
 
         // setting inputs into Parse as objects
