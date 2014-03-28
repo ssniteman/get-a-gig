@@ -4,7 +4,7 @@ var MainRouter = Backbone.Router.extend({
         "": "homePage",
         "createaccount": "createAccount",
         "musicianprofile": "musicianProfile",
-        "editmusicianprofile": "musicianProfileForm"
+        "editmusicianprofile": "musicianProfileForm",
         "musicianprofile/": "savedMusicianProfile"
     },
 
