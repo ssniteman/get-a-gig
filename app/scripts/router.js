@@ -27,8 +27,11 @@ var MainRouter = Backbone.Router.extend({
     // logged in views
 
     createHeader: function() {
-        if (!$('#header').length > 0) {
-            $('.header-container').append('header should go here');
+        if (!$('#header-template').length > 0) {
+
+            var headerTemplate = _.template($('#header-template').text())
+            
+            $('.header-container').append(this.headerTemplate());
         }
     },
 
