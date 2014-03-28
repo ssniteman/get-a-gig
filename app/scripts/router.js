@@ -26,15 +26,18 @@ var MainRouter = Backbone.Router.extend({
     // logged in views
 
     createHeader: function() {
-        if (!$('#header').length > 0) {
-            $('.header-container').append('header should go here');
+        if (!$('.header-container').children().length > 0) {
+
+            var headerTemplate = _.template($('#header-template').text())
+
+            $('.header-container').append(headerTemplate());
         }
     },
 
     musicianProfile: function(usernameFromUrl) {
         this.createHeader();
         var query = new Parse.Query(Parse.User);
-        query.equalTo("username", usernameFromUrl); // find all the women
+        query.equalTo("username", usernameFromUrl);
         query.first({
             success: function(musician) {
                 // Do stuff
