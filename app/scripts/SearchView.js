@@ -2,7 +2,7 @@
 
 // var SearchView = Parse.View.extend({
 
-//     renderedTemplate =
+//     renderedTemplate = _.template($('#searchview-template').text()),
 
 //     initialize: function() {
 
