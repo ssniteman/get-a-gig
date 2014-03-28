@@ -15,7 +15,6 @@ var MainRouter = Backbone.Router.extend({
     homePage: function() {
 
         new SetUpView()
-
     },
 
     createAccount: function() {
