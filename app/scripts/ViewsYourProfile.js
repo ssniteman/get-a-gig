@@ -37,10 +37,8 @@ var SavedMusicianProfileView = Parse.View.extend({
     },
 
     initialize: function() {
-        console.log('musician profile initializing')
         $('body').html(this.el)
         this.render()
-        console.log('musician profile rendering')
     },
 
     render: function() {
@@ -51,4 +49,3 @@ var SavedMusicianProfileView = Parse.View.extend({
         new EditMusicianProfileView()
     }
 });
-

@@ -2,10 +2,10 @@ var MainRouter = Backbone.Router.extend({
 
     routes: {
         "": "homePage",
-        "createaccount": "createAccount",
-        "musicianprofile": "musicianProfile",
-        "editmusicianprofile": "musicianProfileForm",
-        "musicianprofile/": "savedMusicianProfile"
+        "create-account": "createAccount",
+        "musician/:username": "musicianProfile",
+        "musician/edit": "musicianProfileForm",
+        // "musician-profile/": "savedMusicianProfile"
     },
 
     initialize: function() {
