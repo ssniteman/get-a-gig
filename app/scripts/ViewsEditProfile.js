@@ -18,6 +18,21 @@ var EditMusicianProfileView = Parse.View.extend({
 
     render: function() {
         this.$el.html(this.renderedTemplate())
+
+        $(".e1").select2();
+        console.log('it worked')
+
+        $(".e23").select2({
+            tags: ["folk", "country", "blues"],
+            maximumInputLength: 0
+        });
+
+        $(".e24").select2({
+            tags: ["weekdays", "weekends", ],
+            maximumInputLength: 0
+        });
+        console.log('rendering edit profile from profile view')
+
     },
 
     saveProfile: function() {
