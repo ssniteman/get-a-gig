@@ -27,7 +27,8 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-   
+        <div class="header-container"></div>
+        <div class="content-container"></div>
 
 
 
@@ -199,30 +200,30 @@
                         </div>
                         <div class="musician-profile-main-info">
                             <div class="name">
-                                <h3 placeholder="Name">Name</h3>
+                                <h3><%= this.model.get('name') %></h3>
                             </div>
                             <div class="band">
-                                <h4>Time Enough at Last | Folk</h4>
+                                <h4><%= this.model.get('bandName') %></h4>
                             </div>
                             <div class="location">
-                                <p>Charlotte, NC</p>
+                                <p><%= this.model.get('city') %></p>
                             </div>
                         </div>
                         <div class="musician-edit-button">
-                            <a href="#editmusicianprofile"><div type="button" class="edit-button pull-right" data-dismiss="modal">Edit</div></a>
+                            <a href="#/profile/edit">Edit</a>
                         </div>
                         <div class="musician-profile-secondary-info">
                             <div class="nightly-rate">
                                 <h3 class="rate-title">Nightly Rate</h3>
                             </div>
                             <div class="nightly-rate-price">
-                                <h4 class="price">$125</h4>
+                                <h4 class="price">$<%= this.model.get('nightlyRate') %></h4>
                             </div>
                             <div class="availability-title">
                                 <h3 class="available-copy">Availability</h3>
                             </div>
                             <div class="availability">
-                                <h4 class="available-calender">Fri-Sat</h4>
+                                <h4 class="available-calender"><%= this.model.get('availability') %></h4>
                             </div>
                         </div>
                     </div>
@@ -447,47 +448,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- MUSICIAN FORM VIEW -->
 
         <script type="text/template" id="musician-form-template">
@@ -527,360 +487,6 @@
             </div>
 
         </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- NEW SAVED MUSICIAN PROFILE VIEW (AFTER EDITED) -->
-
-        <script type="text/template" id="saved-musician-profile-template">
-              <div class="profile-page-background">
-                <div class="main-header">
-                    <div class="musician-page-container-header">
-                        <div class="navigation-buttons">
-                            <div type="button" class="profile-button pull-right" data-dismiss="modal">Profile</div>
-                            <div type="button" class="profile-button pull-right" data-dismiss="modal">Messages</div>
-                            <div type="button" class="profile-button pull-right" data-dismiss="modal">Search</div>
-                        </div>
-                        <div class="header-logo-div">
-                            <img src="images/header-logo.png" class="header-logo">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="musician-page-container">
-
-
-
-                    // <!-- Musician Profile Box Section Start-->
-
-                    <div class="musician-profile-box">
-                        <div class="musician-profile-image-div">
-                            <img src="images/avatar.jpg" class="musician-avatar">
-                        </div>
-                        <div class="musician-profile-main-info">
-                            <div class="name">
-                                <h3 placeholder="Name"> <%= this.model.get('musicbandname') %> </h3>
-                            </div>
-                            <div class="band">
-                                <h4> <%= this.model.get('genre') %> </h4>
-                            </div>
-                            <div class="location">
-                                <p> <%= this.model.get('city') %>, <%= this.model.get('state') %> </p>
-                            </div>
-                        </div>
-                        <div class="musician-edit-button">
-                            <a href="#editmusicianprofile"><div type="button" class="edit-button pull-right" data-dismiss="modal">Edit</div></a>
-                        </div>
-                        <div class="musician-profile-secondary-info">
-                            <div class="nightly-rate">
-                                <h3 class="rate-title">Nightly Rate</h3>
-                            </div>
-                            <div class="nightly-rate-price">
-                                <h4 class="price">$<%= this.model.get('nightlyrate') %> </h4>
-                            </div>
-                            <div class="availability-title">
-                                <h3 class="available-copy">Availability</h3>
-                            </div>
-                            <div class="availability">
-                                <h4 class="available-calender"> <%= this.model.get('availability') %> </h4>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    // <!-- Musician Profile Box Section End-->
-
-
-
-
-                    // <!-- Musician Profile Search Query Section Start -->
-
-                    <div class="search-box">
-                        <div class="musician-search-header">
-                            <h3 class="musician-search-header-title">Search other users</h3>
-                        </div>
-                        <div class="search-buttons">
-                              <div class="musician-search-btn">
-                                 <p class="choose-main-copy">Musician or Bar</p>
-                                 <span class="glyphicon glyphicon-chevron-down musician-chevron"></span>
-                              </div>
-                              <div class="location-search-btn">
-                                 <p class="choose-location-copy">Location</p>
-                                 <span class="glyphicon glyphicon-chevron-down location-chevron"></span>
-                              </div>
-                              <div class="genre-search-btn">
-                                 <p class="choose-genre-copy">Genre</p>
-                                 <span class="glyphicon glyphicon-chevron-down genre-chevron"></span>
-                              </div>
-                              <div class="availability-search-btn">
-                                 <p class="choose-availability-copy">Availability</p>
-                                 <span class="glyphicon glyphicon-chevron-down availability-chevron"></span>
-                              </div>
-                              <div class="section-search-btn">Search</div>
-                        </div>
-                    </div>
-
-                    // <!-- Musician Profile Search Query Section End -->
-
-
-
-                    // <!-- Musician Profile Showcase Section Start -->
-
-                    <div class="showcase-box">
-                        <div class="musician-showcase-header">
-                            <h3 class="musician-showcase-header-title">Showcase</h3>
-                        </div>
-                        <h3 class="musician-showcase-photo-title">Photography</h3>
-                        <div class="musician-photo-gallery">
-                            <div class="musician-photo-one-div">
-                                <div class="musician-photo-crop">
-                                    <img src="images/converge-photo.jpg" class="musician-photo-size">
-                                </div>
-                            </div>
-
-                            <div class="musician-photo-two-div">
-                                <div class="musician-photo-crop">
-                                    <img src="images/converge-photo.jpg" class="musician-photo-size">
-                                </div>
-                            </div>
-
-                            <div class="musician-photo-three-div">
-                                <div class="musician-photo-crop">
-                                    <img src="images/converge-photo.jpg" class="musician-photo-size">
-                                </div>
-                            </div>
-
-                            <div class="musician-photo-four-div">
-                                <div class="musician-photo-crop">
-                                    <img src="images/converge-photo.jpg" class="musician-photo-size">
-                                </div>
-                            </div>
-
-                            <div class="musician-photo-five-div">
-                                <div class="musician-photo-crop">
-                                    <img src="images/converge-photo.jpg" class="musician-photo-size">
-                                </div>
-                            </div>
-
-                            <div class="musician-photo-six-div">
-                                <div class="musician-photo-crop">
-                                    <img src="images/converge-photo.jpg" class="musician-photo-size">
-                                </div>
-                            </div>
-                            <h3 class="musician-showcase-videos-title">Videos</h3>
-                        </div>
-                    </div>
-
-
-                    // <!-- Musician Profile Showcase Section End -->
-
-
-
-
-                    // <!-- Musician Message Section Start -->
-
-                    <div class="messages-preview-box">
-                        <div class="musician-message-header">
-                            <h3 class="musician-message-header-title">New Messages</h3>
-                        </div>
-                        <div class="musician-message-list">
-                            <div class="new-message">
-                               <div class="musician-message-image-div">
-                                   <img src="images/avatar.jpg" class="musician-message-avatar">
-                               </div>
-
-                               <div class="message-text-content">
-                                   <p class="new-message-name">Jeremy Crawford</p>
-                                   <p class="new-message-genre">Metal and Hardcore</p> 
-                                   <p class="new-message-text">3 wolf moon keytar cornhole pop-up.</p> 
-                               </div> 
-                            </div>
-
-                            <div class="new-message">
-                               <div class="musician-message-image-div">
-                                   <img src="images/avatar.jpg" class="musician-message-avatar">
-                               </div>
-
-                               <div class="message-text-content">
-                                   <p class="new-message-name">Shane Sniteman</p>
-                                   <p class="new-message-genre">Country and Pop</p>
-                                   <p class="new-message-text">3 wolf moon keytar cornhole pop-up.</p> 
-                               </div>
-                            </div>
-
-                            <div class="new-message">
-                               <div class="musician-message-image-div">
-                                   <img src="images/avatar.jpg" class="musician-message-avatar">
-                               </div>
-
-                               <div class="message-text-content">
-                                   <p class="new-message-name">Jeremy Crawford</p>
-                                   <p class="new-message-genre">Metal and Hardcore</p>
-                                   <p class="new-message-text">3 wolf moon keytar cornhole pop-up.</p> 
-                               </div>
-                            </div>
-
-                            <div class="new-message">
-                               <div class="musician-message-image-div">
-                                   <img src="images/avatar.jpg" class="musician-message-avatar">
-                               </div>
-
-                               <div class="message-text-content">
-                                   <p class="new-message-name">Shane Sniteman</p>
-                                   <p class="new-message-genre">Country and Pop</p>
-                                   <p class="new-message-text">3 wolf moon keytar cornhole pop-up.</p> 
-                               </div>
-                            </div>
-
-                            <div class="new-message">
-                               <div class="musician-message-image-div">
-                                   <img src="images/avatar.jpg" class="musician-message-avatar">
-                               </div>
-
-                               <div class="message-text-content">
-                                   <p class="new-message-name">Jeremy Crawford</p>
-                                   <p class="new-message-genre">Metal and Hardcore</p>
-                                   <p class="new-message-text">3 wolf moon keytar cornhole pop-up.</p> 
-                               </div>
-                            </div>
-
-                            <div class="new-message">
-                               <div class="musician-message-image-div">
-                                   <img src="images/avatar.jpg" class="musician-message-avatar">
-                               </div>
-
-                               <div class="message-text-content">
-                                   <p class="new-message-name">Shane Sniteman</p>
-                                   <p class="new-message-genre">Country and Pop</p> 
-                                   <p class="new-message-text">3 wolf moon keytar cornhole pop-up.</p>
-                               </div>
-                            </div>
-
-                            <div class="new-message">
-                               <div class="musician-message-image-div">
-                                   <img src="images/avatar.jpg" class="musician-message-avatar">
-                               </div>
-
-                               <div class="message-text-content">
-                                   <p class="new-message-name">Jeremy Crawford</p>
-                                   <p class="new-message-genre">Metal and Hardcore</p>
-                                   <p class="new-message-text">3 wolf moon keytar cornhole pop-up.</p> 
-                               </div>
-                            </div>
-
-                            <div class="new-message">
-                               <div class="musician-message-image-div">
-                                   <img src="images/avatar.jpg" class="musician-message-avatar">
-                               </div>
-
-                               <div class="message-text-content">
-                                   <p class="new-message-name">Shane Sniteman</p>
-                                   <p class="new-message-genre">Country and Pop</p>
-                                   <p class="new-message-text">3 wolf moon keytar cornhole pop-up.</p> 
-                               </div>
-                            </div>
-
-                            <div class="new-message">
-                               <div class="musician-message-image-div">
-                                   <img src="images/avatar.jpg" class="musician-message-avatar">
-                               </div>
-
-                               <div class="message-text-content">
-                                   <p class="new-message-name">Jeremy Crawford</p>
-                                   <p class="new-message-genre">Metal and Hardcore</p>
-                                   <p class="new-message-text">3 wolf moon keytar cornhole pop-up.</p> 
-                               </div>
-                            </div>
-                        </div>
-                        <div class="message-preview-btn">Messages</div>
-                    </div>
-
-                  </div>
-              </div>
-           
-            <footer class="footer-two"></footer>
-
-        </script>
-
-        <!-- END OF SAVED/ EDITEDMUSICIAN PROFILE VIEW -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
