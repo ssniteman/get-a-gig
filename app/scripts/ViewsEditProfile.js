@@ -74,11 +74,8 @@ var EditMusicianProfileView = Parse.View.extend({
                 alert("Error: " + error.code + " " + error.message);
             }
         });
-
-
         console.log('firing musician edit profile view')
 
     }
 
-
-})
+});

@@ -24,3 +24,6 @@ var YourMusicianProfileView = Parse.View.extend({
         new EditMusicianProfileView()
     }
 });
+
+
+//////////////SAVED MUSICIAN PROFILE VIEW///////////////////
