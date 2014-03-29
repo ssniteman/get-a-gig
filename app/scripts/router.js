@@ -66,9 +66,4 @@ var MainRouter = Backbone.Router.extend({
         }
     },
 
-    savedMusicianProfile: function() {
-        this.createHeader();
-        new SavedMusicianProfileView()
-    }
-
 })
