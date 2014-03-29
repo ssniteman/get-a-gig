@@ -21,7 +21,9 @@ var YourMusicianProfileView = Parse.View.extend({
     },
 
     searchProfiles: function() {
-        console.log('search profile rendering')
-        new SearchView()
+        router.navigate('search', {
+            trigger: true
+        });
+        console.log('search profile router triggering')
     }
 });

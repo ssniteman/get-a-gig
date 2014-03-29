@@ -5,6 +5,7 @@ var MainRouter = Backbone.Router.extend({
         "create-account": "createAccount",
         "musician/:username": "musicianProfile",
         "profile/edit": "musicianProfileForm",
+        "search": "searchProfiles"
     },
 
     initialize: function() {
@@ -65,5 +66,10 @@ var MainRouter = Backbone.Router.extend({
             });
         }
     },
+
+    searchProfiles: function() {
+        this.createHeader();
+        new SearchView()
+    }
 
 })
