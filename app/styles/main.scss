@@ -1612,14 +1612,20 @@ body {
     background-color: #dd473d;
 
     .search-header-title {
-        font-size: 18px;
-        font-weight: 300;
-        letter-spacing: 2px;
-        color: snow;
-        line-height: 60px;
-        text-align: center;
-        margin-top: 0px;
-        letter-spacing: 1px;
+        background-color: rgb(168, 48, 39);
+        width: 230px;
+        height: 60px;
+
+        .header-text {
+            font-size: 20px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            color: snow;
+            line-height: 60px;
+            margin-left: 40px;
+            margin-top: 0px;
+            letter-spacing: 1px;
+        }
     }
 }
 
