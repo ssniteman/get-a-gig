@@ -53,6 +53,7 @@ var EditMusicianProfileView = Parse.View.extend({
         this.model.set('bandName', $('.musician-name-form').val());
         // this.model.set('email', $('.musician-email-form').val());
         this.model.set('city', $('.musician-city-form').val());
+        this.model.set('state', $('.musician-state-form').val());
         this.model.set('genre', $('.musician-genre-form').val());
         this.model.set('nightlyRate', $('.musician-nightly-rate-form').val());
         this.model.set('availability', $('.musician-availability-form').val());

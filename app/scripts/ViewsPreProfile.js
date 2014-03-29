@@ -106,8 +106,9 @@ var CreateAccountView = Parse.View.extend({
         musician.set('userType', "musician");
 
         musician.set('bandName', "Your Band Name");
-        musician.set('city', "Your City");
-        musician.set('genre', "Your Genre");
+        musician.set('city', "City");
+        musician.set('state', "State");
+        musician.set('genre', "Genre");
         musician.set('nightlyRate', "0");
         musician.set('availability', "");
 

@@ -65,7 +65,7 @@
                 </div>
               </div>
               <div class="create-account">
-                  <a href="#createaccount"><div class="create-account-btn">Create Account</div></a>
+                  <a href="#createaccount" class="create-account" style="text-decoration:none"><div class="create-account-btn">Create Account</div></a>
               </div>
             </div>
         </script>
@@ -173,14 +173,14 @@
                                 <h3><%= this.model.get('name') %></h3>
                             </div>
                             <div class="band">
-                                <h4><%= this.model.get('bandName') %></h4>
+                                <h4><%= this.model.get('genre') %></h4>
                             </div>
                             <div class="location">
-                                <p><%= this.model.get('city') %></p>
+                                <p><%= this.model.get('city') %>, <%= this.model.get('state') %></p>
                             </div>
                         </div>
                         <div class="musician-edit-button">
-                            <a href="#/profile/edit">Edit</a>
+                            <a href="#/profile/edit" class="edit-button">Edit</a>
                         </div>
                         <div class="musician-profile-secondary-info">
                             <div class="nightly-rate">
