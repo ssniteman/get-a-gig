@@ -1,21 +1,20 @@
 /////////// SEARCH VIEW //////////////////////
 
-// var SearchView = Parse.View.extend({
+var SearchView = Parse.View.extend({
 
-//     renderedTemplate = _.template($('#searchview-template').text()),
+    renderedTemplate: _.template($('#search-view-template').text()),
 
-//     initialize: function() {
+    initialize: function() {
+      $('.content-container').html(this.el)
+      this.render()
+    },
 
-
-//     },
-
-//     render: function() {
-
-
-//     }
-
+    render: function() {
+      this.$el.html(this.renderedTemplate())
+    }
 
 
 
 
-// })
+
+})
