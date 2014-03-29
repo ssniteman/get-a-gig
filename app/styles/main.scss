@@ -508,16 +508,20 @@ body {
 }
 
 .musician-profile-main-info {
+    width: 310px;
     display: inline-block;
     vertical-align: top;
     margin-top: 80px;
+    padding-top: 4px;
+    height: 26px;
 
     h3 {
+        text-overflow: hidden;
         margin-top: 0px;
         margin-bottom: 0px;
         display: inline-block;
         line-height: 13px;
-        font-size: 24px;
+        font-size: 20px;
         letter-spacing: 1px;
         color: snow;
     }
@@ -1565,6 +1569,30 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Search Page View
 
 
 
