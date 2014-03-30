@@ -49,6 +49,7 @@ var MainRouter = Backbone.Router.extend({
         });
 
 
+
     },
 
     musicianProfileForm: function() {
