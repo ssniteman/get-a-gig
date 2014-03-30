@@ -7,6 +7,16 @@ var SearchView = Parse.View.extend({
     initialize: function() {
         $('.content-container').html(this.el)
         this.render()
+
+        var musicianQuery = new Parse.Query('Musician');
+        musicianQuery.equalTo('userType', 'musician')
+        musician.find({
+            success: function(musicians) {
+                _.each(musicians, function(musician) {
+                    model: musician
+                })
+            }
+        })
     },
 
     render: function() {
@@ -21,22 +31,22 @@ var SearchView = Parse.View.extend({
 // Attempt at search functionality
 
 
-if (value of input is "musician") {
+// if (value of input is "musician") {
 
-    var musicianQuery = new Parse.Query('Musician');
-    musicianQuery.equalTo('userType', 'musician')
-    musician.find({
-        success: function(musicians) {
-            _.each(musicians, function(musician) {
+//     var musicianQuery = new Parse.Query('Musician');
+//     musicianQuery.equalTo('userType', 'musician')
+//     musician.find({
+//         success: function(musicians) {
+//             _.each(musicians, function(musician) {
+//                 model: musician
+//             })
+//         }
+//     })
 
-            })
-        }
-    })
+// });
 
-});
-
-} else {
-    router.navigate('venue/' + user.get('username'), {
-        trigger: true
-    });
-}
+// } else {
+//     router.navigate('venue/' + user.get('username'), {
+//         trigger: true
+//     });
+// }
