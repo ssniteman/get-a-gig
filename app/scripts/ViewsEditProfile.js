@@ -44,7 +44,7 @@ var EditMusicianProfileView = Parse.View.extend({
         // var email = $('.musician-email-form').val();
         var city = $('.musician-city-form').val();
         var state = $('.musician-state-form').val();
-        var genre = $('.e23').val();
+        var genre = $('.musician-genre-form').val();
         var nightlyRate = $('.musician-nightly-rate-form').val();
         var availability = $('.musician-availability-form').val();
 
@@ -54,7 +54,7 @@ var EditMusicianProfileView = Parse.View.extend({
         // this.model.set('email', $('.musician-email-form').val());
         this.model.set('city', $('.musician-city-form').val());
         this.model.set('state', $('.musician-state-form').val());
-        this.model.set('genre', $('.e23').val());
+        this.model.set('genre', $('.musician-genre-form').val());
         this.model.set('nightlyRate', $('.musician-nightly-rate-form').val());
         this.model.set('availability', $('.musician-availability-form').val());
 

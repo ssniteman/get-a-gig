@@ -462,7 +462,7 @@ body {
     }
 }
 
-.profile-button {
+.profile-buttons {
     font-weight: 100;
     letter-spacing: 2px;
     display: inline-block;
@@ -1595,6 +1595,129 @@ body {
 // Search Page View
 
 
+
+.musician-search-page-container {
+    padding-bottom: 20px;
+    background-color: snow;
+    margin: 0 auto;
+    margin-top: 125px;
+    width: 960px;
+    height: 960px;
+}
+
+.search-page-container-header {
+    position: relative;
+    width: 960px;
+    height: 60px;
+    background-color: #dd473d;
+
+    .search-header-title {
+        background-color: rgb(168, 48, 39);
+        width: 230px;
+        height: 60px;
+
+        .header-text {
+            font-size: 20px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            color: snow;
+            line-height: 60px;
+            margin-left: 40px;
+            margin-top: 0px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.musician-search-list {
+    margin-top: 20px;
+    position: relative;
+    border-bottom: 1px solid rgba(192, 192, 192, .1);
+    margin-left: 20px;
+    height: 795px;
+    width: 915px;
+    overflow: scroll;
+    background-color: snow;
+
+    .new-search {
+        width: 100%;
+        height: 120px;
+        color: silver;
+        // border: 1px solid silver;
+        background-color: rgba(192, 192, 192, .2);
+        margin-bottom: 20px;
+
+        .musician-search-image-div {
+            position: relative;
+            left: 0px;
+            display: inline-block;
+            margin: 15px 5px 0px 15px;
+            border-radius: 50%;
+            width: 90px;
+            height: 90px;
+            overflow: hidden;
+
+            .musician-search-avatar {
+                width: 90px;
+                height: auto;
+            }
+        }
+
+        .search-content {
+            width: 175px;
+            height: 90px;
+            position: relative;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 22px;
+
+            .search-name {
+                letter-spacing: 1px;
+                margin: 0px;
+                font-size: 20px;
+                font-weight: 500;
+                color: rgba(51, 51, 51, .6);
+            }
+
+            .search-genre {
+                letter-spacing: 1px;
+                margin: 0px;
+                font-size: 16px;
+                font-weight: 500;
+                color: rgba(51, 51, 51, .6);
+            }
+
+            .search-text {
+                margin: 0px;
+                font-size: 14px;
+                font-weight: 200;
+                color: rgba(51, 51, 51, .6);
+            }
+        }
+
+        .send-message-btn {
+            font-size: 13px;
+            float: right;
+            display: inline-block;
+            width: 115px;
+            height: 36px;
+            color: white;
+            border: none;
+            border-radius: 2px;
+            background-color: rgb(221, 71, 61);
+            line-height: 31px;
+            text-align: center;
+            padding-top: 3px;
+            margin: 0 auto;
+            margin-top: 42px;
+            margin-right: 42px;
+        }
+
+        &:hover {
+            background-color: rgba(51, 51, 51, .1);
+        }
+    }
+}
 
 
 
