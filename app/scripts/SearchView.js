@@ -14,3 +14,29 @@ var SearchView = Parse.View.extend({
     }
 
 });
+
+
+
+
+// Attempt at search functionality
+
+
+if (value of input is "musician") {
+
+    var musicianQuery = new Parse.Query('Musician');
+    musicianQuery.equalTo('userType', 'musician')
+    musician.find({
+        success: function(musicians) {
+            _.each(musicians, function(musician) {
+
+            })
+        }
+    })
+
+});
+
+} else {
+    router.navigate('venue/' + user.get('username'), {
+        trigger: true
+    });
+}
