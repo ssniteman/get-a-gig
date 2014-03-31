@@ -524,28 +524,29 @@
 
                 <div class="musician-search-list">
                     
-                    
-                  <script type="text/template" id="search-list-view-template">
-                    <div class="new-search">
-                       <div class="musician-search-image-div">
-                           <img src="images/avatar.jpg" class="musician-search-avatar">
-                       </div>
-
-                       <div class="search-content">
-                           <p class="search-name">Band Name</p>
-                           <p class="search-genre">Genre</p> 
-                           <p class="search-text">City, State</p> 
-                       </div>
-
-                       <div class="send-message-btn">Send Message</div>
-                    </div>
-                  </script>
+                
 
 
 
                 </div>
 
             </div>
+          </div>
+        </script>
+
+        <script type="text/template" id="search-list-view-template">
+          <div class="new-search">
+             <div class="musician-search-image-div">
+                 <img src="images/avatar.jpg" class="musician-search-avatar">
+             </div>
+
+             <div class="search-content">
+                 <p class="search-name"> <%= this.model.get('bandName') %> </p>
+                 <p class="search-genre"> <%= this.model.get('genre') %> </p> 
+                 <p class="search-text"> <%= this.model.get('city') %>, <%= this.model.get('state') %></p> 
+             </div>
+
+             <div class="send-message-btn">Send Message</div>
           </div>
         </script>
 

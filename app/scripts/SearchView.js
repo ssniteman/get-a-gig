@@ -2,57 +2,63 @@
 
 var SearchView = Parse.View.extend({
 
-        renderedTemplate: _.template($('#search-view-template').text()),
+    renderedTemplate: _.template($('#search-view-template').text()),
 
-        initialize: function() {
-            $('.content-container').html(this.el)
-            this.render()
+    initialize: function() {
+        $('.content-container').html(this.el)
 
-            render: function() {
-                this.$el.html(this.renderedTemplate())
-            }
+        // Attempt at search functionality
+        var userTypeQuery = new Parse.Query(Parse.User);
 
-        });
-
-
-    ///////// LIST VIEW ///////////////////////////
-
-    var SearchListView = Parse.View.extend({
-
-        renderedTemplate: _.template($('#search-list-view-template').text()),
-
-        initialize: function() {
-            $('musician-search-list').append(this.el)
-            this.render()
-        },
-
-        render: function() {
-            this.$el.html(this.renderedTemplate())
-        }
-
-
-    })
-
-
-    // Attempt at search functionality
-    var userTypeQuery = new Parse.Query(Parse.User);
-
-    if ($('.musician-search-btn').length > 0) {
-        userTypeQuery.equalTo('userType', $('.musician-search-btn').find('.select2-choices').html())
-        userTypeQuery.find({
-            success: function(users) {
-                _.each(users, function(userType) {
-                    new SearchListView({
-                        model: this.model
+        if ($('.musician-search-btn').val()) {
+            console.log('value is', $('.musician-search-btn').val())
+            userTypeQuery.equalTo('userType', $('.musician-search-btn').find('.select2-choice').html())
+            userTypeQuery.find({
+                success: function(users) {
+                    _.each(users, function(userType) {
+                        new SearchListView({
+                            model: this.model
+                        })
                     })
-                })
-            }
-        })
-    } else {
-        alert("You're so wrong");
+                }
+            })
+        } else {
+            alert("You're so wrong");
+        }
+        this.render()
+    },
+
+    render: function() {
+        this.$el.html(this.renderedTemplate())
+    }
+
+});
+
+
+///////// LIST VIEW ///////////////////////////
+
+var SearchListView = Parse.View.extend({
+
+    renderedTemplate: _.template($('#search-list-view-template').text()),
+
+    initialize: function() {
+        console.log('cool');
+        $('.musician-search-list').append(this.el)
+        this.render()
+    },
+
+    render: function() {
+        console.log('rendering SearchListView')
+        this.$el.html(this.renderedTemplate())
+
+
+
+
+
     }
 
 
+});
 
 
 
@@ -95,13 +101,13 @@ var SearchView = Parse.View.extend({
 
 
 
-    // var musicianQuery = new Parse.Query('Musician');
-    // musicianQuery.equalTo('userType', 'musician')
-    // musician.find({
-    //     success: function(musicians) {
-    //         _.each(musicians, function(musician) {
-    //             model: musician
-    //         })
-    //     }
-    // })
-    // },
+// var musicianQuery = new Parse.Query('Musician');
+// musicianQuery.equalTo('userType', 'musician')
+// musician.find({
+//     success: function(musicians) {
+//         _.each(musicians, function(musician) {
+//             model: musician
+//         })
+//     }
+// })
+// },
