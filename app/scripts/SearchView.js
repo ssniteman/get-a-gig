@@ -29,21 +29,40 @@ var SearchView = Parse.View.extend({
 
 
 // Attempt at search functionality
+var musicianQuery = new Parse.Query('Musician');
 
+if (value of input is "musician") {
+    musicianQuery.equalTo('userType', 'musician')
+} else {
 
-// if (value of input is "musician") {
+}
 
-//     var musicianQuery = new Parse.Query('Musician');
-//     musicianQuery.equalTo('userType', 'musician')
-//     musician.find({
-//         success: function(musicians) {
-//             _.each(musicians, function(musician) {
-//                 model: musician
-//             })
-//         }
-//     })
+if (value of input is "musician") {
+    musicianQuery.equalTo('userType', 'musician')
+} else {
 
-// });
+}
+
+if (value of input is "musician") {
+    musicianQuery.equalTo('userType', 'musician')
+} else {
+
+}
+
+if (value of input is "musician") {
+    musicianQuery.equalTo('userType', 'musician')
+} else {
+
+}
+
+musicianQuery.find({
+        success: function(musicians) {
+
+        })
+}
+})
+
+});
 
 // } else {
 //     router.navigate('venue/' + user.get('username'), {
