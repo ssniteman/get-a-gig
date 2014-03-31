@@ -37,8 +37,8 @@ var SearchView = Parse.View.extend({
     // Attempt at search functionality
     var userTypeQuery = new Parse.Query(Parse.User);
 
-    if ($('.e23').length > 0) {
-        userTypeQuery.equalTo('userType', $('.e23').html())
+    if ($('.musician-search-btn').length > 0) {
+        userTypeQuery.equalTo('userType', $('.musician-search-btn').find('.select2-choices').html())
         userTypeQuery.find({
             success: function(users) {
                 _.each(users, function(userType) {
@@ -49,7 +49,7 @@ var SearchView = Parse.View.extend({
             }
         })
     } else {
-        alert
+        alert("You're so wrong");
     }
 
 
@@ -58,32 +58,32 @@ var SearchView = Parse.View.extend({
 
 
 
-    if (value of input is "musician") {
-        musicianQuery.equalTo('userType', 'musician')
-    } else {
+//     if (value of input is "musician") {
+//         musicianQuery.equalTo('userType', 'musician')
+//     } else {
 
-    }
+//     }
 
-    if (value of input is "musician") {
-        musicianQuery.equalTo('userType', 'musician')
-    } else {
+//     if (value of input is "musician") {
+//         musicianQuery.equalTo('userType', 'musician')
+//     } else {
 
-    }
+//     }
 
-    if (value of input is "musician") {
-        musicianQuery.equalTo('userType', 'musician')
-    } else {
+//     if (value of input is "musician") {
+//         musicianQuery.equalTo('userType', 'musician')
+//     } else {
 
-    }
+//     }
 
-    musicianQuery.find({
-            success: function(musicians) {
+//     musicianQuery.find({
+//             success: function(musicians) {
 
-            })
-    }
-})
+//             })
+//     }
+// })
 
-});
+// });
 
 // } else {
 //     router.navigate('venue/' + user.get('username'), {
@@ -95,13 +95,13 @@ var SearchView = Parse.View.extend({
 
 
 
-var musicianQuery = new Parse.Query('Musician');
-musicianQuery.equalTo('userType', 'musician')
-musician.find({
-    success: function(musicians) {
-        _.each(musicians, function(musician) {
-            model: musician
-        })
-    }
-})
-},
+    // var musicianQuery = new Parse.Query('Musician');
+    // musicianQuery.equalTo('userType', 'musician')
+    // musician.find({
+    //     success: function(musicians) {
+    //         _.each(musicians, function(musician) {
+    //             model: musician
+    //         })
+    //     }
+    // })
+    // },
