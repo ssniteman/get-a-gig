@@ -49,7 +49,7 @@ var SearchView = Parse.View.extend({
             }
         })
     } else {
-
+        alert
     }
 
 
