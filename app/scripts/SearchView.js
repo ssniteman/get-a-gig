@@ -17,7 +17,7 @@ var SearchView = Parse.View.extend({
 
     ///////// LIST VIEW ///////////////////////////
 
-    var ListView = Parse.View.extend({
+    var SearchListView = Parse.View.extend({
 
         renderedTemplate: _.template($('#search-list-view-template').text()),
 
@@ -35,13 +35,28 @@ var SearchView = Parse.View.extend({
 
 
     // Attempt at search functionality
-    var musicianQuery = new Parse.Query('Musician');
+    var userTypeQuery = new Parse.Query(Parse.User);
 
-    if (value of input is "musician") {
-        musicianQuery.equalTo('userType', 'musician')
+    if ($('.e23').length > 0) {
+        userTypeQuery.equalTo('userType', $('.e23').html())
+        userTypeQuery.find({
+            success: function(users) {
+                _.each(users, function(userType) {
+                    new SearchListView({
+                        model: this.model
+                    })
+                })
+            }
+        })
     } else {
 
     }
+
+
+
+
+
+
 
     if (value of input is "musician") {
         musicianQuery.equalTo('userType', 'musician')
