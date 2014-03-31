@@ -27,7 +27,7 @@ Version: 3.4.6 Timestamp: Sat Mar 22 22:30:15 EDT 2014
 
 .select2-container .select2-choice {
     display: block;
-    height: 45px;
+    height: 50px;
     padding: 0 0 0 8px;
     overflow: hidden;
     position: relative;
@@ -38,7 +38,7 @@ Version: 3.4.6 Timestamp: Sat Mar 22 22:30:15 EDT 2014
     color: #444;
     text-decoration: none;
 
-    border-radius: 4px;
+    border-radius: 2px;
 
     background-clip: padding-box;
 
@@ -53,7 +53,7 @@ Version: 3.4.6 Timestamp: Sat Mar 22 22:30:15 EDT 2014
     background-image: -webkit-linear-gradient(center bottom, #eee 0%, #fff 50%);
     background-image: -moz-linear-gradient(center bottom, #eee 0%, #fff 50%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffff', endColorstr = '#eeeeee', GradientType = 0);
-    background-image: linear-gradient(to top, #eee 0%, #fff 50%);
+    /*background-image: linear-gradient(to top, #eee 0%, #fff 50%);*/
 }
 
 .select2-container.select2-drop-above .select2-choice {
@@ -176,6 +176,7 @@ Version: 3.4.6 Timestamp: Sat Mar 22 22:30:15 EDT 2014
 }
 
 .select2-container .select2-choice .select2-arrow {
+    padding-top: 10px;
     display: inline-block;
     width: 18px;
     height: 100%;
@@ -442,6 +443,7 @@ disabled look for disabled choices in the results dropdown
     height: auto !important;
     height: 1%;
     margin: 0;
+    margin-top: 20px;
     padding: 0;
     position: relative;
     border: 1px solid silver;
@@ -479,12 +481,13 @@ html[dir="rtl"] .select2-container-multi .select2-choices li
     margin: 0;
     padding: 0;
     white-space: nowrap;
+    list-style: none;
 }
 
 .select2-container-multi .select2-choices .select2-search-field input {
     padding: 5px;
     margin: 1px 0;
-
+    list-style: none;
     font-family: sans-serif;
     font-size: 100%;
     color: #666;
@@ -497,6 +500,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices li
 
 .select2-container-multi .select2-choices .select2-search-field input.select2-active {
     background: #fff url('select2-spinner.gif') no-repeat 100% !important;
+    display: none;
 }
 
 .select2-default {
@@ -508,7 +512,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices li
     margin: 5px 0 3px 5px;
     position: relative;
     height: 38px;
-
+    display: inline-block;
 
     color: rgb(51, 51, 51);
     font-weight: 200;
