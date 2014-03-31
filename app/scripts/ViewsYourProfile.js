@@ -20,7 +20,7 @@ var YourMusicianProfileView = Parse.View.extend({
         this.$el.html(this.renderedTemplate())
 
         $(".musician-search-btn").select2({
-            tags: ["folk", "country", "blues"],
+            tags: ["musician", "venue"],
             maximumInputLength: 0
         });
 
