@@ -6,11 +6,12 @@ var SearchView = Parse.View.extend({
 
     initialize: function() {
         $('.content-container').html(this.el)
+        this.render()
 
         // Attempt at search functionality
         var userTypeQuery = new Parse.Query(Parse.User);
 
-        if ($('.musician-search-btn').val()) {
+        if (window.searchOne) {
             console.log('value is', $('.musician-search-btn').val())
             userTypeQuery.equalTo('userType', $('.musician-search-btn').find('.select2-choice').html())
             userTypeQuery.find({
@@ -25,7 +26,6 @@ var SearchView = Parse.View.extend({
         } else {
             alert("You're so wrong");
         }
-        this.render()
     },
 
     render: function() {
@@ -50,13 +50,7 @@ var SearchListView = Parse.View.extend({
     render: function() {
         console.log('rendering SearchListView')
         this.$el.html(this.renderedTemplate())
-
-
-
-
-
     }
-
 
 });
 
