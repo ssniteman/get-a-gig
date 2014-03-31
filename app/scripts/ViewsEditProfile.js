@@ -53,8 +53,10 @@ var EditMusicianProfileView = Parse.View.extend({
             this.model.set('bandName', $('.musician-name-form').val());
             // this.model.set('email', $('.musician-email-form').val());
             this.model.set('city', $('.musician-city-form').val());
-            this.model.set('state', $('.musician-state-form').val());
-            this.model.set('genre', $('.musician-genre-form').find('.select2-search-choice').html(); this.model.set('nightlyRate', $('.musician-nightly-rate-form').val()); this.model.set('availability', $('.musician-availability-form').val());
+            this.model.set('state', $('.musician-state-form').find('.select2-choice').html())
+            // this.model.set('genre', $('.musician-genre-form').find('.select2-search-choice').html(); 
+            this.model.set('nightlyRate', $('.musician-nightly-rate-form').val()); 
+            this.model.set('availability', $('.musician-availability-form').val());
 
                 console.log('FORM is pushing to parse')
 
