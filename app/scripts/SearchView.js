@@ -2,64 +2,70 @@
 
 var SearchView = Parse.View.extend({
 
-    renderedTemplate: _.template($('#search-view-template').text()),
+        renderedTemplate: _.template($('#search-view-template').text()),
 
-    initialize: function() {
-        $('.content-container').html(this.el)
-        this.render()
+        initialize: function() {
+            $('.content-container').html(this.el)
+            this.render()
 
-        var musicianQuery = new Parse.Query('Musician');
-        musicianQuery.equalTo('userType', 'musician')
-        musician.find({
-            success: function(musicians) {
-                _.each(musicians, function(musician) {
-                    model: musician
-                })
+            render: function() {
+                this.$el.html(this.renderedTemplate())
             }
-        })
-    },
 
-    render: function() {
-        this.$el.html(this.renderedTemplate())
+        });
+
+
+    ///////// LIST VIEW ///////////////////////////
+
+    var ListView = Parse.View.extend({
+
+        renderedTemplate: _.template($('#search-list-view-template').text()),
+
+        initialize: function() {
+            $('musician-search-list').append(this.el)
+            this.render()
+        },
+
+        render: function() {
+            this.$el.html(this.renderedTemplate())
+        }
+
+
+    })
+
+
+    // Attempt at search functionality
+    var musicianQuery = new Parse.Query('Musician');
+
+    if (value of input is "musician") {
+        musicianQuery.equalTo('userType', 'musician')
+    } else {
+
     }
 
-});
+    if (value of input is "musician") {
+        musicianQuery.equalTo('userType', 'musician')
+    } else {
 
+    }
 
+    if (value of input is "musician") {
+        musicianQuery.equalTo('userType', 'musician')
+    } else {
 
+    }
 
-// Attempt at search functionality
-var musicianQuery = new Parse.Query('Musician');
+    if (value of input is "musician") {
+        musicianQuery.equalTo('userType', 'musician')
+    } else {
 
-if (value of input is "musician") {
-    musicianQuery.equalTo('userType', 'musician')
-} else {
+    }
 
-}
+    musicianQuery.find({
+            success: function(musicians) {
 
-if (value of input is "musician") {
-    musicianQuery.equalTo('userType', 'musician')
-} else {
-
-}
-
-if (value of input is "musician") {
-    musicianQuery.equalTo('userType', 'musician')
-} else {
-
-}
-
-if (value of input is "musician") {
-    musicianQuery.equalTo('userType', 'musician')
-} else {
-
-}
-
-musicianQuery.find({
-        success: function(musicians) {
-
-        })
-}
+            })
+    }
 })
 
 });
@@ -69,3 +75,18 @@ musicianQuery.find({
 //         trigger: true
 //     });
 // }
+
+
+
+
+
+var musicianQuery = new Parse.Query('Musician');
+musicianQuery.equalTo('userType', 'musician')
+musician.find({
+    success: function(musicians) {
+        _.each(musicians, function(musician) {
+            model: musician
+        })
+    }
+})
+},
