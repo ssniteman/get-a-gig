@@ -14,8 +14,8 @@ var YourMusicianProfileView = Parse.View.extend({
         this.render();
         console.log('musician profile rendering')
 
-        this.listenTo($(".musician-search-btn"), 'change', function() {
-            window.searchOne = $(".musician-search-btn").val()
+        $(".musician-search-btn").change(function() {
+            window.searchOne = $(this).val();
         })
     },
 
