@@ -56,7 +56,10 @@ var SetUpView = Parse.View.extend({
 
     createAccountView: function() {
         console.log('clicked create account')
-        new CreateAccountView()
+        // new CreateAccountView()
+        router.navigate('create-account', {
+            trigger: true
+        });
         console.log('rendered new create account view')
     }
 
@@ -117,7 +120,7 @@ var CreateAccountView = Parse.View.extend({
         musician.signUp(null, {
             success: function(musician) {
                 GG.me = musician;
-                // window.location.href = '/#musicianprofile'
+
                 router.navigate('musician/' + musician.get('username'), {
                     trigger: true
                 });
