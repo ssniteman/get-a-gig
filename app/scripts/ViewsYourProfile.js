@@ -28,6 +28,11 @@ var YourMusicianProfileView = Parse.View.extend({
             maximumInputLength: 0
         });
 
+        $(".location-search-btn").select2({
+            tags: ["Merica", "South Carolina"],
+            maximumInputLength: 0
+        });
+
     },
 
     searchProfiles: function() {
