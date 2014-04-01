@@ -724,31 +724,13 @@ body {
 }
 
 .musician-search-btn {
-    width: 100%;
+    width: 320px;
     height: 60px;
     color: silver;
     border-bottom: 1px solid silver;
     background-color: snow;
     text-align: center;
     margin: 0 auto;
-
-
-    .choose-main-copy {
-        margin-left: 30px;
-        line-height: 60px;
-        font-size: 17px;
-        display: inline-block;
-        font-weight: 200;
-        letter-spacing: 2px;
-        display: inline-block;
-    }
-
-    .glyphicon-chevron-down {
-        float: right;
-        line-height: 60px;
-        margin-right: 20px;
-        position: relative;
-    }
 
     &:hover {
         color: rgb(51, 51, 51);
