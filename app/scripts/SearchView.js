@@ -6,18 +6,20 @@ var SearchView = Parse.View.extend({
 
     initialize: function() {
         $('.content-container').html(this.el)
+        this.render()
 
         // Attempt at search functionality
         var userTypeQuery = new Parse.Query(Parse.User);
 
-        if ($('.musician-search-btn').val()) {
-            console.log('value is', $('.musician-search-btn').val())
-            userTypeQuery.equalTo('userType', $('.musician-search-btn').find('.select2-choice').html())
+        if (window.searchOne) {
+            console.log('value is', window.searchOne)
+            userTypeQuery.equalTo('userType', window.searchOne)
             userTypeQuery.find({
                 success: function(users) {
-                    _.each(users, function(userType) {
+                    console.log(users)
+                    _.each(users, function(user) {
                         new SearchListView({
-                            model: this.model
+                            model: user
                         })
                     })
                 }
@@ -25,7 +27,6 @@ var SearchView = Parse.View.extend({
         } else {
             alert("You're so wrong");
         }
-        this.render()
     },
 
     render: function() {
@@ -42,7 +43,7 @@ var SearchListView = Parse.View.extend({
     renderedTemplate: _.template($('#search-list-view-template').text()),
 
     initialize: function() {
-        console.log('cool');
+        console.log('searchListView initializing');
         $('.musician-search-list').append(this.el)
         this.render()
     },
@@ -50,13 +51,7 @@ var SearchListView = Parse.View.extend({
     render: function() {
         console.log('rendering SearchListView')
         this.$el.html(this.renderedTemplate())
-
-
-
-
-
     }
-
 
 });
 
