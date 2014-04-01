@@ -17,6 +17,19 @@ var YourMusicianProfileView = Parse.View.extend({
         $(".musician-search-btn").change(function() {
             window.searchOne = $(this).val();
         })
+
+        $(".location-search-btn").change(function() {
+            window.searchTwo = $(this).val();
+        })
+
+        $(".genre-search-btn").change(function() {
+            window.searchThree = $(this).val();
+        })
+
+        $("availability-search-btn").change(function() {
+            window.searchFour = $(this).val();
+        })
+
     },
 
     render: function() {
