@@ -5,7 +5,8 @@ var YourMusicianProfileView = Parse.View.extend({
     renderedTemplate: _.template($('#your-musician-profile-template').text()),
 
     events: {
-        "click .section-search-btn": "searchProfiles"
+        "click .section-search-btn": "searchProfiles",
+        "click .musician-search-btn": "musicianVenue"
     },
 
     initialize: function() {
@@ -36,15 +37,15 @@ var YourMusicianProfileView = Parse.View.extend({
         console.log('did it actually render?')
         this.$el.html(this.renderedTemplate())
 
-        $(".musician-search-btn").select2({
-            tags: ["musician", "venue"],
-            maximumInputLength: 0
-        });
+        // $(".musician-search-btn").select2({
+        //     tags: ["musician", "venue"],
+        //     maximumInputLength: 0
+        // });
 
-        $(".location-search-btn").select2({
-            tags: ["Merica", "South Carolina"],
-            maximumInputLength: 0
-        });
+        // $(".location-search-btn").select2({
+        //     tags: ["Merica", "South Carolina"],
+        //     maximumInputLength: 0
+        // });
 
     },
 
@@ -53,5 +54,9 @@ var YourMusicianProfileView = Parse.View.extend({
             trigger: true
         });
         console.log('search profile router triggering')
+    },
+
+    musicianVenue: function() {
+        $('.musician-search-btn').addClass('active');
     }
 });
