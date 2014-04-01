@@ -32,6 +32,7 @@ var YourMusicianProfileView = Parse.View.extend({
         })
 
     },
+    
 
     render: function() {
         console.log('did it actually render?')
