@@ -183,8 +183,6 @@ body {
    /* border-bottom: 1.5px solid rgb(168,48,39);*/
     margin: 0 auto;
     @include transition(height 1000ms ease);
-
-
 }
 
 .username {
@@ -725,13 +723,30 @@ body {
 }
 
 .musician-search-btn {
-    width: 320px;
+    width: 100%;
     height: 60px;
     color: silver;
     border-bottom: 1px solid silver;
     background-color: snow;
     text-align: center;
     margin: 0 auto;
+
+    .choose-search-copy {
+        margin-left: 30px;
+        line-height: 60px;
+        font-size: 17px;
+        display: inline-block;
+        font-weight: 200;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+
+    .glyphicon-chevron-down.location-chevron {
+        float: right;
+        line-height: 60px;
+        margin-right: 20px;
+        position: relative;
+    }
 
     &:hover {
         color: rgb(51, 51, 51);
