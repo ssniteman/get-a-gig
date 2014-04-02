@@ -6,8 +6,10 @@ var YourMusicianProfileView = Parse.View.extend({
 
     events: {
         "click .section-search-btn": "searchProfiles",
+        "click .musician-search-btn": "locationOne",
         "click .location-search-btn": "locationTwo",
-        "click .musician-search-btn": "locationOne"
+        "click .genre-search-btn": "locationThree",
+        "click .availability-search-btn": "locationFour"
     },
 
     initialize: function() {
@@ -49,6 +51,16 @@ var YourMusicianProfileView = Parse.View.extend({
             maximumInputLength: 0
         });
 
+        $(".e27").select2({
+            tags: ["Folk", "Country", "Rock", "Blues", "R & B", "Celtic", "Rap", "Metal"],
+            maximumInputLength: 0
+        });
+
+        $(".e28").select2({
+            tags: ["Weekdays", "Weekends"],
+            maximumInputLength: 0
+        });
+
     },
 
     searchProfiles: function() {
@@ -64,8 +76,14 @@ var YourMusicianProfileView = Parse.View.extend({
 
     locationTwo: function() {
         $('.location-two').toggleClass('active')
+    },
+
+    locationThree: function() {
+        $('.location-three').toggleClass('active')
+    },
+
+    locationFour: function() {
+        $('.location-four').toggleClass('active')
     }
-
-
 
 });
