@@ -5,8 +5,8 @@ var YourMusicianProfileView = Parse.View.extend({
     renderedTemplate: _.template($('#your-musician-profile-template').text()),
 
     events: {
-        "click .section-search-btn": "searchProfiles"
-        // "click .musician-search-btn": "musicianVenue"
+        "click .section-search-btn": "searchProfiles",
+        "click .location-search-btn": "locationTwo"
     },
 
     initialize: function() {
@@ -57,8 +57,9 @@ var YourMusicianProfileView = Parse.View.extend({
         console.log('search profile router triggering')
     },
 
-    musicianVenue: function() {
-        $('.musician-search-btn').addClass('active');
-        $('.select-two-div').addClass('active');
+    locationTwo: function() {
+        $('.location-two').toggleClass('active')
     }
+
+
 });
