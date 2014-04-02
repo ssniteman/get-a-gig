@@ -5,8 +5,8 @@ var YourMusicianProfileView = Parse.View.extend({
     renderedTemplate: _.template($('#your-musician-profile-template').text()),
 
     events: {
-        "click .section-search-btn": "searchProfiles"
-        // "click .musician-search-btn": "musicianVenue"
+        "click .section-search-btn": "searchProfiles",
+        "click .musician-search-btn": "musicianVenue"
     },
 
     initialize: function() {
@@ -38,7 +38,7 @@ var YourMusicianProfileView = Parse.View.extend({
         console.log('did it actually render?')
         this.$el.html(this.renderedTemplate())
 
-        $(".e25").select2({
+        $(".musician-search-btn").select2({
             tags: ["musician", "venue"],
             maximumInputLength: 0
         });
