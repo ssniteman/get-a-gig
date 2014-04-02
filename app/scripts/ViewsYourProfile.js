@@ -38,7 +38,7 @@ var YourMusicianProfileView = Parse.View.extend({
         console.log('did it actually render?')
         this.$el.html(this.renderedTemplate())
 
-        $(".e25").select2({
+        $(".musician-search-btn").select2({
             tags: ["musician", "venue"],
             maximumInputLength: 0
         });
