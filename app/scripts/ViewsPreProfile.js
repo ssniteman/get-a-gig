@@ -124,6 +124,7 @@ var CreateAccountView = Parse.View.extend({
                 router.navigate('musician/' + musician.get('username'), {
                     trigger: true
                 });
+                location.reload()
             },
             error: function(musician, error) {
                 // Show the error message somewhere and let the user try again.
