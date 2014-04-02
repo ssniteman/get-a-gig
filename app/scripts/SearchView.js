@@ -60,38 +60,38 @@ var SearchListView = Parse.View.extend({
 
 
 
-if (window.searchType) {
-    console.log('value is', window.searchType)
-    var userTypeQuery = new Parse.Query(Parse.User);
-    userTypeQuery.equalTo('userType', window.searchType)
-}
+// if (window.searchType) {
+//     console.log('value is', window.searchType)
+//     var userTypeQuery = new Parse.Query(Parse.User);
+//     userTypeQuery.equalTo('userType', window.searchType)
+// }
 
-if (window.searchLocation) {
-    console.log('value is', window.searchLocation)
-    var userLocationQuery = new Parse.Query(Parse.User);
-    userLocationQuery.equalTo('userLocation', window.searchLocation)
-}
+// if (window.searchLocation) {
+//     console.log('value is', window.searchLocation)
+//     var userLocationQuery = new Parse.Query(Parse.User);
+//     userLocationQuery.equalTo('userLocation', window.searchLocation)
+// }
 
-if (window.searchGenre) {
-    console.log('value is', window.searchGenre)
-    var userGenreQuery = new Parse.Query(Parse.User);
-    userGenreQuery.equalTo('userGenre', window.searchGenre)
-}
+// if (window.searchGenre) {
+//     console.log('value is', window.searchGenre)
+//     var userGenreQuery = new Parse.Query(Parse.User);
+//     userGenreQuery.equalTo('userGenre', window.searchGenre)
+// }
 
-if (window.searchAvail) {
-    console.log('value is', window.searchAvail)
-    var userAvailQuery = new Parse.Query(Parse.User);
-    userAvailQuery.equalTo('userAvail', window.searchAvail)
-}
+// if (window.searchAvail) {
+//     console.log('value is', window.searchAvail)
+//     var userAvailQuery = new Parse.Query(Parse.User);
+//     userAvailQuery.equalTo('userAvail', window.searchAvail)
+// }
 
-var mainQuery = Parse.Query.or(userTypeQuery, userLocationQuery, userGenreQuery, userAvailQuery);
-mainQuery.find({
-    success: function(users) {
-        console.log(users)
-        _.each(users, function(user) {
-            new SearchListView({
-                model: user
-            })
-        })
-    }
-})
+// var mainQuery = Parse.Query.or(userTypeQuery, userLocationQuery, userGenreQuery, userAvailQuery);
+// mainQuery.find({
+//     success: function(users) {
+//         console.log(users)
+//         _.each(users, function(user) {
+//             new SearchListView({
+//                 model: user
+//             })
+//         })
+//     }
+// })
