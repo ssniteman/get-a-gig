@@ -18,21 +18,21 @@ var YourMusicianProfileView = Parse.View.extend({
         this.render();
         console.log('musician profile rendering')
 
-        $(".musician-search-btn").change(function() {
+        $(".select2-offscreen").change(function() {
             window.searchOne = $(this).val();
         })
 
-        $(".location-search-btn").change(function() {
-            window.searchTwo = $(this).val();
-        })
+        // $(".location-search-btn").change(function() {
+        //     window.searchTwo = $(this).val();
+        // })
 
-        $(".genre-search-btn").change(function() {
-            window.searchThree = $(this).val();
-        })
+        // $(".genre-search-btn").change(function() {
+        //     window.searchThree = $(this).val();
+        // })
 
-        $("availability-search-btn").change(function() {
-            window.searchFour = $(this).val();
-        })
+        // $("availability-search-btn").change(function() {
+        //     window.searchFour = $(this).val();
+        // })
 
     },
 
@@ -71,7 +71,7 @@ var YourMusicianProfileView = Parse.View.extend({
     },
 
     locationOne: function() {
-        $('.location-one').toggleClass('active')    
+        $('.location-one').toggleClass('active')
     },
 
     locationTwo: function() {
